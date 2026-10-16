@@ -37,12 +37,14 @@ export function PortfolioGrid({
   initialLimit = 9,
   includeAll = true,
   deferCatalogue = false,
+  showViewAll = false,
 }: {
   items: PortfolioItem[];
   initialCategory?: string;
   initialLimit?: number;
   includeAll?: boolean;
   deferCatalogue?: boolean;
+  showViewAll?: boolean;
 }) {
   const categories = includeAll ? [...portfolioCategories, "All Projects"] : [...portfolioCategories];
   const requestedCategory = categories.find((category) => slug(category) === initialCategory);
@@ -149,11 +151,18 @@ export function PortfolioGrid({
           <PortfolioCard item={item} index={index} key={`${item.title}-${index}`} />
         ))}
       </div>
-      {filtered.length > visibleCount && (
+      {(filtered.length > visibleCount || showViewAll) && (
         <div className="ge-work__actions">
-          <button className="ge-button ge-button--outline" type="button" onClick={() => setVisibleCount((count) => count + initialLimit)}>
-            Load More Projects
-          </button>
+          {filtered.length > visibleCount && (
+            <button className="ge-button ge-button--outline" type="button" onClick={() => setVisibleCount((count) => count + initialLimit)}>
+              Load More Projects
+            </button>
+          )}
+          {showViewAll && (
+            <Link className="ge-button ge-button--gold" href="/portfolio/">
+              <span>View All Projects</span>
+            </Link>
+          )}
         </div>
       )}
     </>

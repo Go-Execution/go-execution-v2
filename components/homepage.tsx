@@ -225,12 +225,7 @@ export async function Homepage() {
             Explore selected Go Execution projects across web development, ecommerce, branding, digital marketing, video and mobile applications. Each project is built around a specific business challenge, audience and growth objective.
           </p>
         </div>
-        <PortfolioGrid items={content.portfolio.filter((project) => project.category === "Website Design & Development")} initialLimit={6} includeAll={false} deferCatalogue />
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }} className="ge-reveal">
-          <Link className="ge-button ge-button--outline" href="/portfolio/">
-            <span>View All Projects</span>
-          </Link>
-        </div>
+        <PortfolioGrid items={content.portfolio.filter((project) => project.category === "Website Design & Development")} initialLimit={6} includeAll={false} deferCatalogue showViewAll />
       </div></section>
 
       {/* --- INDUSTRIES SECTION (REDESIGNED LUXURY BENTO GRID) --- */}

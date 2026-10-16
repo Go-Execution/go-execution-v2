@@ -10983,21 +10983,57 @@ body:not(.home) .ge-header,
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
+	gap: 16px !important;
+	flex-wrap: wrap !important;
 	width: 100% !important;
 	margin-top: 40px !important;
 	text-align: center !important;
 }
+.ge-work .ge-button,
 .ge-work__actions .ge-button {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	min-height: 48px !important;
+	padding: 12px 28px !important;
+	border-radius: 999px !important;
+	font-weight: 700 !important;
+	font-size: 14px !important;
+	letter-spacing: 0.02em !important;
+	text-decoration: none !important;
+	transition: all 0.25s ease !important;
+}
+.ge-work .ge-button--outline,
+.ge-work__actions .ge-button--outline,
+.ge-work__actions button.ge-button {
 	background: #ffffff !important;
 	color: var(--ge-navy, #0d1b2a) !important;
-	border-color: #ffffff !important;
-	font-weight: 700 !important;
+	border: 1.5px solid #ffffff !important;
 	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
 }
-.ge-work__actions .ge-button:hover {
+.ge-work .ge-button--outline:hover,
+.ge-work__actions .ge-button--outline:hover,
+.ge-work__actions button.ge-button:hover {
 	background: var(--ge-gold-light, #f0d59e) !important;
 	color: var(--ge-navy, #0d1b2a) !important;
 	border-color: var(--ge-gold-light, #f0d59e) !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+}
+.ge-work .ge-button--gold,
+.ge-work__actions .ge-button--gold {
+	background: linear-gradient(135deg, #d4af37, #f3e5ab) !important;
+	color: #0d1b2a !important;
+	border: 1.5px solid #d4af37 !important;
+	box-shadow: 0 4px 20px rgba(201, 168, 106, 0.35) !important;
+}
+.ge-work .ge-button--gold:hover,
+.ge-work__actions .ge-button--gold:hover {
+	background: #ffffff !important;
+	border-color: #ffffff !important;
+	color: #0d1b2a !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 6px 24px rgba(255, 255, 255, 0.3) !important;
 }
 
 /* --- SECTION 5: SECTOR INDUSTRIES (LIGHT) --- */
