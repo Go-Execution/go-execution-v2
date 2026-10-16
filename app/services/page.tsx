@@ -97,7 +97,7 @@ export default function ServicesPage() {
                 return (
                   <article key={cat.slug} className="ge-dark-bento-card ge-reveal">
                     {/* Media Banner */}
-                    <div className="ge-dark-bento-card__media">
+                    <div className="ge-dark-bento-card__media ge-media-4x3">
                       <Image
                         src={cat.image}
                         alt={cat.title}

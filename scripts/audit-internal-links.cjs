@@ -53,6 +53,10 @@ function loadTsModule(filePath) {
         else if (fs.existsSync(resolved + ".js")) resolved += ".js";
         else if (fs.existsSync(path.join(resolved, "index.ts"))) resolved = path.join(resolved, "index.ts");
       }
+      if (resolved.endsWith(".json")) {
+        const jsonContent = require(resolved);
+        return jsonContent;
+      }
       return loadTsModule(resolved);
     }
     return require(id);

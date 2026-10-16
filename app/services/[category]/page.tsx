@@ -60,8 +60,8 @@ export default async function CategoryHubPage({ params }: Props) {
       <JsonLd data={schema} />
       <main id="primary" className="site-main ge-service-category-hub-page">
         {/* --- CINEMATIC CATEGORY HERO --- */}
-        <section className="ge-hero ge-hero--inner ge-industry-hero">
-          <div className="ge-hero__media-backdrop">
+        <section className="ge-hero ge-hero--inner ge-industry-hero ge-hero--fixed-media">
+          <div className="ge-hero__media-backdrop ge-media-4x3">
             <Image
               src={cat.image}
               alt={cat.title}
@@ -174,7 +174,7 @@ export default async function CategoryHubPage({ params }: Props) {
               {subServicesList.map((sub, idx) => (
                 <article key={sub.slug} className="ge-service-feature-row ge-reveal">
                   {/* Left Media Box */}
-                  <div className="ge-service-feature-row__media">
+                  <div className="ge-service-feature-row__media ge-media-4x3">
                     <Image
                       src={sub.image}
                       alt={sub.title}
@@ -235,7 +235,7 @@ export default async function CategoryHubPage({ params }: Props) {
               </p>
             </div>
 
-            <div className="ge-process-media-strip">
+            <div className="ge-process-media-strip ge-media-4x3">
               <Image
                 src={cat.image}
                 alt={`${cat.title} team delivery process`}

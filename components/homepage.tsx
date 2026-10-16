@@ -3,6 +3,7 @@ import Link from "next/link";
 import content from "@/lib/wp-content.json";
 import { MobileHeroStory } from "@/components/mobile-hero-story";
 import { DesktopHeroBackground } from "@/components/desktop-hero-background";
+import { HomeServices } from "@/components/home-services";
 import { FaqAccordion, PortfolioGrid, PricingGrid } from "@/components/interactive-sections";
 
 import { createClient } from "@supabase/supabase-js";
@@ -16,7 +17,7 @@ const growthSteps = [
     label: "Discover",
     title: "Discover & Analyze",
     copy: "We analyse your business, audience, competitors and existing digital presence to identify the highest-value opportunities.",
-    image: "/assets/images/real/professional-services.jpeg",
+    image: "/assets/images/stock/service-digital-marketing.jpg",
     alt: "Digital Agency Discovery & Analysis by Go Execution",
   },
   {
@@ -24,7 +25,7 @@ const growthSteps = [
     label: "Strategise",
     title: "Strategise & Plan",
     copy: "We turn those findings into a practical digital strategy aligned with your commercial objectives.",
-    image: "/assets/images/real/technology-saas.jpeg",
+    image: "/assets/images/stock/industry-professional-services.jpg",
     alt: "Digital Strategy Planning by Go Execution",
   },
   {
@@ -32,7 +33,7 @@ const growthSteps = [
     label: "Build",
     title: "Build & Execute",
     copy: "Our developers, designers and marketers create the website, campaigns and digital experiences required to execute the strategy.",
-    image: "/assets/images/real/real-estate.jpeg",
+    image: "/assets/images/stock/service-web-development.jpg",
     alt: "Web Engineering & Marketing Execution by Go Execution",
   },
   {
@@ -40,7 +41,7 @@ const growthSteps = [
     label: "Launch",
     title: "Launch & Measure",
     copy: "We launch your digital assets and establish the measurement systems needed to track performance.",
-    image: "/assets/images/real/hospitality.jpeg",
+    image: "/assets/images/stock/subservice-website-redesign.jpg",
     alt: "Digital Asset Launch & Performance Tracking by Go Execution",
   },
   {
@@ -48,7 +49,7 @@ const growthSteps = [
     label: "Optimise",
     title: "Optimise & Scale",
     copy: "We use performance data to identify improvements and continuously refine your digital presence and marketing activity.",
-    image: "/assets/images/real/health-wellness.jpeg",
+    image: "/assets/images/stock/service-seo.jpg",
     alt: "Digital Performance Optimization by Go Execution",
   },
 ] as const;
@@ -60,7 +61,7 @@ const homepageIndustries = [
     tag: "PROPERTY & MLS",
     title: "Real Estate & Development",
     desc: "Custom MLS/IDX property search platforms, seller valuation funnels, and high-converting brokerage websites.",
-    image: "/assets/images/real/real-estate.jpeg",
+    image: "/assets/images/stock/industry-real-estate.jpg",
     feature: "MLS/IDX Integration & Listing Leads",
       cta: "Explore Property Growth",
   },
@@ -70,7 +71,7 @@ const homepageIndustries = [
     tag: "E-COMMERCE & LUXURY",
     title: "Fashion & Apparel",
     desc: "Sub-second Shopify & Next.js luxury storefronts, paid social video campaigns, and brand identity systems.",
-    image: "/assets/images/real/fashion-retail.jpeg",
+    image: "/assets/images/stock/industry-fashion.jpg",
     feature: "Headless E-Commerce & UGC Ads",
       cta: "Scale Your Brand",
   },
@@ -80,7 +81,7 @@ const homepageIndustries = [
     tag: "CLINICAL & WELLNESS",
     title: "Health & Wellness",
     desc: "HIPAA-compliant patient booking portals, local search optimization, and reputation management funnels.",
-    image: "/assets/images/real/health-wellness.jpeg",
+    image: "/assets/images/stock/industry-health-wellness.jpg",
     feature: "HIPAA Portals & Local Map Pack SEO",
       cta: "View Patient Funnels",
   },
@@ -90,7 +91,7 @@ const homepageIndustries = [
     tag: "SAAS & TECH",
     title: "Technology & B2B SaaS",
     desc: "High-converting product landing pages, technical SEO, demo booking funnels, and brand positioning.",
-    image: "/assets/images/real/technology-saas.jpeg",
+    image: "/assets/images/stock/industry-technology.jpg",
     feature: "Demo Booking & Technical SEO",
       cta: "Scale SaaS Revenue",
   },
@@ -100,7 +101,7 @@ const homepageIndustries = [
     tag: "LEGAL & FINANCIAL",
     title: "Professional Services",
     desc: "Authority-building digital platforms, practice area SEO, and high-value consultation lead generation.",
-    image: "/assets/images/real/professional-services.jpeg",
+    image: "/assets/images/stock/industry-professional-services.jpg",
     feature: "Consultation Funnels & Organic Growth",
       cta: "Grow Firm Authority",
   },
@@ -110,7 +111,7 @@ const homepageIndustries = [
     tag: "HOTELS & DINING",
     title: "Hospitality & Leisure",
     desc: "Immersive venue showcases, direct booking engines, promo video animation, and local search campaigns.",
-    image: "/assets/images/real/hospitality.jpeg",
+    image: "/assets/images/stock/industry-hospitality.jpg",
     feature: "Direct Booking & Video Marketing",
       cta: "Boost Direct Bookings",
   },
@@ -211,7 +212,7 @@ export async function Homepage() {
       </div></section>
 
       {/* --- SERVICES SECTION --- */}
-      
+      <HomeServices />
 
       {/* --- PORTFOLIO SECTION --- */}
       <section id="work" className="ge-section ge-work"><div className="ge-container">
@@ -266,14 +267,16 @@ export async function Homepage() {
                   } as React.CSSProperties
                 }
               >
-                <Image
-                  className="ge-bento-industry-card__image"
-                  src={ind.image}
-                  alt=""
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <span className="ge-bento-industry-card__shade" aria-hidden="true" />
+                <div className="ge-bento-industry-card__media ge-media-4x3">
+                  <Image
+                    className="ge-bento-industry-card__image"
+                    src={ind.image}
+                    alt={`${ind.title} digital growth services`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <span className="ge-bento-industry-card__shade" aria-hidden="true" />
+                </div>
                 <div className="ge-bento-card-content">
                   <div className="ge-bento-card-header">
                     <span className="ge-bento-card-num">{ind.number}</span>
@@ -362,7 +365,7 @@ export async function Homepage() {
         <div className="ge-scroll-section"><div className="ge-scroll-text">
           {growthSteps.map((step, index) => (
             <article className={`ge-scroll-step ge-growth-card ge-growth-story${index === 0 ? " is-active" : ""}`} data-index={index} key={step.title} style={{ "--card-index": index } as React.CSSProperties}>
-              <div className="ge-scroll-step__mobile-img-wrap">
+              <div className="ge-scroll-step__mobile-img-wrap ge-media-4x3">
                 <Image src={step.image} alt={step.alt} fill sizes="(max-width: 820px) 100vw, 50vw" quality={80} />
                 
               </div>

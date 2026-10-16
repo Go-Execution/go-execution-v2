@@ -65,8 +65,8 @@ export default async function IndustryDetailPage({ params }: Props) {
       <JsonLd data={schema} />
       <main id="primary" className="site-main ge-industry-detail-page">
         {/* --- CINEMATIC INDUSTRY HERO --- */}
-        <section className="ge-hero ge-hero--inner ge-industry-hero">
-          <div className="ge-hero__media-backdrop">
+        <section className="ge-hero ge-hero--inner ge-industry-hero ge-hero--fixed-media">
+          <div className="ge-hero__media-backdrop ge-media-4x3">
             <Image
               src={ind.image}
               alt={ind.title}
@@ -182,7 +182,7 @@ export default async function IndustryDetailPage({ params }: Props) {
             <div className="ge-grid ge-grid--3col ge-industry-services-grid">
               {ind.services.map((srv) => (
                 <div key={srv.slug} className="ge-industry-service-card ge-reveal">
-                  <div className="ge-industry-service-card__media">
+                  <div className="ge-industry-service-card__media ge-media-4x3">
                     <Image
                       src={subServices[srv.slug]?.image ?? ind.image}
                       alt={`${srv.title} for ${ind.title}`}

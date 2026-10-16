@@ -6,47 +6,47 @@ import { useEffect, useRef } from "react";
 const cards = [
   {
     id: "branding-design",
-    source: "/assets/images/real/professional-services.jpeg",
+    source: "/assets/images/stock/service-design-branding.jpg",
     style: { top: "4%", left: "2%", width: "390px", height: "365px" },
   },
   {
     id: "web-dev",
-    source: "/assets/images/real/technology-saas.jpeg",
+    source: "/assets/images/stock/service-web-development.jpg",
     style: { top: "3%", left: "36%", width: "355px", height: "415px" },
   },
   {
     id: "video-motion",
-    source: "/assets/images/real/fashion-retail.jpeg",
+    source: "/assets/images/stock/service-video-animation.jpg",
     style: { top: "5%", left: "69%", width: "375px", height: "350px" },
   },
   {
     id: "seo-analytics",
-    source: "/assets/images/real/real-estate.jpeg",
+    source: "/assets/images/stock/service-seo.jpg",
     style: { top: "36%", left: "18%", width: "365px", height: "395px" },
   },
   {
     id: "tech-saas",
-    source: "/assets/images/real/health-wellness.jpeg",
+    source: "/assets/images/stock/industry-technology.jpg",
     style: { top: "34%", left: "51%", width: "410px", height: "360px" },
   },
   {
     id: "mobile-apps",
-    source: "/assets/images/real/hospitality.jpeg",
+    source: "/assets/images/stock/service-mobile-app-development.jpg",
     style: { top: "37%", right: "2%", width: "360px", height: "390px" },
   },
   {
     id: "real-estate",
-    source: "/assets/images/real/real-estate.jpeg",
+    source: "/assets/images/stock/industry-real-estate.jpg",
     style: { top: "68%", left: "3%", width: "385px", height: "370px" },
   },
   {
     id: "digital-mktg",
-    source: "/assets/images/real/technology-saas.jpeg",
+    source: "/assets/images/stock/service-digital-marketing.jpg",
     style: { top: "66%", left: "37%", width: "350px", height: "420px" },
   },
   {
     id: "retail-ecommerce",
-    source: "/assets/images/real/fashion-retail.jpeg",
+    source: "/assets/images/stock/industry-retail.jpg",
     style: { top: "69%", left: "70%", width: "400px", height: "355px" },
   },
 ] as const;

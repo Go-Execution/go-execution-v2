@@ -29,12 +29,39 @@ export type SubService = {
 };
 
 const serviceVisuals: Record<string, string> = {
-  "web-development": "/assets/images/real/technology-saas.jpeg",
-  seo: "/assets/images/real/real-estate.jpeg",
-  "digital-marketing": "/assets/images/real/technology-saas.jpeg",
-  "design-branding": "/assets/images/real/professional-services.jpeg",
-  video: "/assets/images/real/fashion-retail.jpeg",
-  "mobile-app-development": "/assets/images/real/hospitality.jpeg",
+  "web-development": "/assets/images/stock/service-web-development.jpg",
+  seo: "/assets/images/stock/service-seo.jpg",
+  "digital-marketing": "/assets/images/stock/service-digital-marketing.jpg",
+  "design-branding": "/assets/images/stock/service-design-branding.jpg",
+  video: "/assets/images/stock/service-video-animation.jpg",
+  "mobile-app-development": "/assets/images/stock/service-mobile-app-development.jpg",
+};
+
+const subServiceVisuals: Record<string, string> = {
+  "custom-web-development": "/assets/images/stock/subservice-custom-web-development.jpg",
+  "wordpress-development": "/assets/images/stock/subservice-wordpress-development.jpg",
+  "nextjs-development": "/assets/images/stock/subservice-nextjs-development.jpg",
+  "ecommerce-development": "/assets/images/stock/subservice-ecommerce-development.jpg",
+  "landing-page-development": "/assets/images/stock/subservice-landing-page-development.jpg",
+  "website-redesign": "/assets/images/stock/subservice-website-redesign.jpg",
+  "website-performance": "/assets/images/stock/subservice-website-performance.jpg",
+  "technical-seo": "/assets/images/stock/subservice-technical-seo.jpg",
+  "local-seo": "/assets/images/stock/subservice-local-seo.jpg",
+  "ecommerce-seo": "/assets/images/stock/subservice-ecommerce-seo.jpg",
+  "small-business-seo": "/assets/images/stock/subservice-small-business-seo.jpg",
+  "content-marketing": "/assets/images/stock/subservice-content-marketing.jpg",
+  "social-media-marketing": "/assets/images/stock/subservice-social-media-marketing.jpg",
+  "paid-advertising": "/assets/images/stock/subservice-paid-advertising.jpg",
+  "conversion-optimisation": "/assets/images/stock/subservice-conversion-optimisation.jpg",
+  "graphic-design": "/assets/images/stock/subservice-graphic-design.jpg",
+  "logo-design": "/assets/images/stock/subservice-logo-design.jpg",
+  "brand-identity": "/assets/images/stock/subservice-brand-identity.jpg",
+  "creative-design": "/assets/images/stock/subservice-creative-design.jpg",
+  "video-animation": "/assets/images/stock/subservice-video-animation.jpg",
+  "2d-animation": "/assets/images/stock/subservice-2d-animation.jpg",
+  "3d-animation": "/assets/images/stock/subservice-3d-animation.jpg",
+  "explainer-videos": "/assets/images/stock/subservice-explainer-videos.jpg",
+  "custom-mobile-app-development": "/assets/images/stock/subservice-custom-mobile-app-development.jpg",
 };
 
 export const serviceCategories: Record<string, ServiceCategory> = {
@@ -409,7 +436,7 @@ const subServiceEntries: Record<string, SubService> = {
     ],
     relatedServices: ["website-performance", "local-seo"],
     relatedIndustries: ["technology", "real-estate"],
-    relatedBlogSlugs: ["what-is-technical-seo", "why-is-my-website-not-ranking-on-google", "cost-of-poor-core-web-vitals-inp"]
+    relatedBlogSlugs: ["generative-engine-optimization-geo-guide", "what-is-technical-seo", "why-is-my-website-not-ranking-on-google", "cost-of-poor-core-web-vitals-inp"]
   },
   "local-seo": {
     slug: "local-seo",
@@ -531,7 +558,7 @@ const subServiceEntries: Record<string, SubService> = {
     ],
     relatedServices: ["social-media-marketing", "paid-advertising"],
     relatedIndustries: ["technology", "professional-services"],
-    relatedBlogSlugs: ["b2b-saas-seo-strategy", "enterprise-seo-vs-traditional-seo", "how-long-does-seo-take-for-new-website"]
+    relatedBlogSlugs: ["generative-engine-optimization-geo-guide", "b2b-saas-seo-strategy", "enterprise-seo-vs-traditional-seo", "how-long-does-seo-take-for-new-website"]
   },
   "social-media-marketing": {
     slug: "social-media-marketing",
@@ -909,7 +936,7 @@ export const subServices: Record<string, SubService> = Object.fromEntries(
     slug,
     {
       ...service,
-      image: serviceVisuals[service.categorySlug] ?? service.image,
+      image: subServiceVisuals[slug] ?? serviceVisuals[service.categorySlug] ?? service.image,
     },
   ]),
 );

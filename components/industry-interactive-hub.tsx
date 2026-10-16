@@ -49,7 +49,7 @@ export function IndustryInteractiveHub({ industries }: Props) {
         {filteredIndustries.map((ind, idx) => (
           <article key={ind.slug} className="ge-dark-bento-card">
             {/* Ambient Media Banner */}
-            <div className="ge-dark-bento-card__media">
+            <div className="ge-dark-bento-card__media ge-media-4x3">
               <Image
                 src={ind.image}
                 alt={ind.title}

@@ -79,8 +79,8 @@ export default async function SubServicePage({ params }: Props) {
       <JsonLd data={schema} />
       <main id="primary" className="site-main ge-sub-service-detail-page">
         {/* --- CINEMATIC SUB-SERVICE HERO --- */}
-        <section className="ge-hero ge-hero--inner ge-industry-hero">
-          <div className="ge-hero__media-backdrop">
+        <section className="ge-hero ge-hero--inner ge-industry-hero ge-hero--fixed-media">
+          <div className="ge-hero__media-backdrop ge-media-4x3">
             <Image
               src={sub.image}
               alt={sub.title}
@@ -196,7 +196,7 @@ export default async function SubServicePage({ params }: Props) {
               </p>
             </div>
 
-            <div className="ge-process-media-strip">
+            <div className="ge-process-media-strip ge-media-4x3">
               <Image
                 src={sub.image}
                 alt={`${sub.title} team execution process`}
@@ -239,7 +239,7 @@ export default async function SubServicePage({ params }: Props) {
               <div className="ge-grid ge-grid--3col ge-industry-dark-grid">
                 {related.map((rel) => rel && (
                   <article key={rel.slug} className="ge-dark-bento-card ge-reveal">
-                    <div className="ge-dark-bento-card__media">
+                    <div className="ge-dark-bento-card__media ge-media-4x3">
                       <Image
                         src={rel.image}
                         alt={rel.title}

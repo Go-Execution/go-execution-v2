@@ -13941,6 +13941,121 @@ body.ge-menu-open {
 	transform: translateX(4px) !important;
 }
 
+/* Fixed stock-media presentation: every editorial image uses a stable 4:3 frame
+   and remains fully visible instead of being cropped by responsive card heights. */
+.ge-media-4x3 {
+	position: relative !important;
+	display: block !important;
+	width: 100% !important;
+	height: auto !important;
+	min-height: 0 !important;
+	aspect-ratio: 4 / 3 !important;
+	overflow: hidden !important;
+	background: #10243a !important;
+}
+
+.ge-media-4x3 > img {
+	position: absolute !important;
+	inset: 0 !important;
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: contain !important;
+	object-position: center !important;
+	transform: none !important;
+}
+
+.ge-process-media-strip.ge-media-4x3 {
+	max-width: 960px;
+	margin: 10px auto 34px;
+}
+
+.ge-hero--fixed-media {
+	min-height: 620px;
+	background:
+		radial-gradient(circle at 82% 28%, rgba(201, 168, 106, 0.18), transparent 30%),
+		#081728;
+}
+
+.ge-hero--fixed-media .ge-hero__media-backdrop {
+	position: absolute !important;
+	top: 50% !important;
+	right: max(24px, calc((100vw - 1380px) / 2)) !important;
+	bottom: auto !important;
+	left: auto !important;
+	width: min(42vw, 590px) !important;
+	border: 1px solid rgba(229, 193, 88, 0.38);
+	border-radius: 28px;
+	box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+	transform: translateY(-50%);
+}
+
+.ge-hero--fixed-media .ge-hero__media-overlay {
+	background: linear-gradient(180deg, rgba(8, 23, 40, 0.02), rgba(8, 23, 40, 0.2)) !important;
+	pointer-events: none;
+}
+
+.ge-hero--fixed-media .ge-hero__content {
+	width: min(49vw, 690px) !important;
+	max-width: min(49vw, 690px) !important;
+	margin-right: auto !important;
+	margin-left: max(24px, calc((100vw - 1380px) / 2)) !important;
+}
+
+@media (max-width: 1000px) {
+	.ge-hero--fixed-media {
+		align-items: stretch;
+		flex-direction: column;
+		padding-top: 110px;
+	}
+
+	.ge-hero--fixed-media .ge-hero__media-backdrop {
+		position: relative !important;
+		top: auto !important;
+		right: auto !important;
+		width: calc(100% - 40px) !important;
+		max-width: 720px;
+		margin: 0 auto 24px;
+		transform: none;
+	}
+
+	.ge-hero--fixed-media .ge-hero__content {
+		width: calc(100% - 40px) !important;
+		max-width: 720px !important;
+		margin: 0 auto !important;
+	}
+}
+
+.ge-bento-industry-card {
+	height: auto !important;
+	min-height: 0 !important;
+}
+
+.ge-bento-industry-card__media {
+	flex: 0 0 auto;
+}
+
+.ge-bento-card-content {
+	flex: 1 1 auto !important;
+	height: auto !important;
+	min-height: 0 !important;
+}
+
+.ge-bento-card-header {
+	margin-bottom: 18px !important;
+}
+
+@media (max-width: 768px) {
+	.ge-bento-industry-card {
+		height: auto !important;
+		min-height: 0 !important;
+	}
+
+	.ge-bento-card-content {
+		min-height: 0 !important;
+	}
+}
+
 .ge-bento-marquee {
 	margin-top: 60px !important;
 	padding: 20px 0 !important;

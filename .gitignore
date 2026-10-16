@@ -9,6 +9,7 @@ out
 npm-debug.log*
 .claude
 .agents
+scratch/
 TEST_INFRA.md
 TEST_READY.md
 ORIGINAL_REQUEST.md
