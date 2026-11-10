@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import { DeferredAnalytics } from "@/components/deferred-analytics";
 import { ExecutingLoader } from "@/components/executing-loader";
+import { PageTransition } from "@/components/page-transition";
 import { FloatingConsultation } from "@/components/floating-consultation";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { SiteEffects } from "@/components/site-effects";
@@ -76,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <Header />
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Footer />
         <FloatingWhatsApp />
         <FloatingConsultation />

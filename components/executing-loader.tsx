@@ -7,7 +7,7 @@ export function ExecutingLoader() {
 
   useEffect(() => {
     const root = document.documentElement;
-    const mobile = window.matchMedia("(max-width: 1024px)").matches;
+    const mobile = window.matchMedia("(max-width: 768px)").matches;
 
     // The branded loader remains part of the desktop experience. On mobile it
     // must not cover the real hero or wait for every image/script to finish.
@@ -24,7 +24,7 @@ export function ExecutingLoader() {
       timer = window.setTimeout(() => {
         setHidden(true);
         root.style.overflow = previousOverflow;
-      }, 280);
+      }, 350);
     };
 
     if (document.readyState === "complete") dismiss();

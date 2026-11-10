@@ -4371,15 +4371,29 @@ body.ge-loaded .ge-hero__visual {
 	align-items: center;
 	justify-content: center;
 	z-index: 999999;
-	will-change: opacity;
+	will-change: transform;
 	contain: strict;
-	transition: opacity 0.6s var(--ge-ease), visibility 0.6s var(--ge-ease);
+	transform: translateY(0);
+	transition: transform 0.85s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.85s;
 }
 
 .ge-preloader.is-hidden {
-	opacity: 0;
+	transform: translateY(-100%);
 	visibility: hidden;
 	pointer-events: none;
+}
+
+.ge-preloader__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.35s ease;
+}
+
+.ge-preloader.is-hidden .ge-preloader__inner {
+	transform: translateY(-50px);
+	opacity: 0;
 }
 
 @media (max-width: 1024px) {
@@ -4575,15 +4589,29 @@ body.ge-loaded .ge-hero__visual {
 	align-items: center;
 	justify-content: center;
 	z-index: 999999;
-	will-change: opacity;
+	will-change: transform;
 	contain: strict;
-	transition: opacity 0.6s var(--ge-ease), visibility 0.6s var(--ge-ease);
+	transform: translateY(0);
+	transition: transform 0.85s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.85s;
 }
 
 .ge-preloader.is-hidden {
-	opacity: 0;
+	transform: translateY(-100%);
 	visibility: hidden;
 	pointer-events: none;
+}
+
+.ge-preloader__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.35s ease;
+}
+
+.ge-preloader.is-hidden .ge-preloader__inner {
+	transform: translateY(-50px);
+	opacity: 0;
 }
 
 .ge-preloader__inner {
@@ -14129,7 +14157,7 @@ body.ge-menu-open {
 }
 
 /* Keep the branded loader on desktop without delaying mobile LCP. */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	.ge-preloader {
 		display: none !important;
 	}
@@ -14363,4 +14391,76 @@ table {
   body {
     padding-bottom: 90px;
   }
+}
+
+/* ==========================================================================
+   Page Transition Animations (Swipe-Up Exit & Swipe-Up Entrance)
+   ========================================================================== */
+
+.ge-transition-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, var(--ge-gold, #c9a86a), #f0d59e, var(--ge-gold, #c9a86a));
+	z-index: 1000000;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	pointer-events: none;
+}
+
+.ge-transition-bar.is-active {
+	transform: scaleX(1);
+}
+
+.ge-page-transition-wrapper {
+	width: 100%;
+	position: relative;
+	will-change: transform, opacity;
+}
+
+.ge-page-swipe-out {
+	animation: gePageSwipeOut 0.24s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+	pointer-events: none;
+}
+
+.ge-page-swipe-in {
+	animation: gePageSwipeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+	will-change: transform, opacity;
+}
+
+@keyframes gePageSwipeOut {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-40px);
+		opacity: 0;
+	}
+}
+
+@keyframes gePageSwipeIn {
+	0% {
+		transform: translateY(45px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ge-page-swipe-out,
+	.ge-page-swipe-in {
+		animation: none !important;
+		transform: none !important;
+		opacity: 1 !important;
+	}
+	.ge-transition-bar {
+		display: none !important;
+	}
 }
