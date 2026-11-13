@@ -99,25 +99,23 @@ export default async function SubServicePage({ params }: Props) {
             </div>
 
             <h1 className="ge-hero__title">
-              {sub.title} <span className="ge-title-accent">For Growth Brands</span>
+              {sub.h1Title || sub.title} <span className="ge-title-accent">{sub.h1Accent || "For Growth Brands"}</span>
             </h1>
 
             <p className="ge-hero__copy">{sub.intro}</p>
 
             {/* Quick Performance Stat Badges */}
             <div className="ge-hero-stats">
-              <div className="ge-hero-stat-pill">
-                <strong>Sub-1s Speed</strong>
-                <span>Core Web Vitals Optimized</span>
-              </div>
-              <div className="ge-hero-stat-pill">
-                <strong>Zero Code Bloat</strong>
-                <span>Custom Architecture</span>
-              </div>
-              <div className="ge-hero-stat-pill">
-                <strong>Top 1% Standards</strong>
-                <span>Security & Scalability</span>
-              </div>
+              {(sub.stats || [
+                { value: "Sub-2.0s LCP", label: "Core Web Vitals Target" },
+                { value: "Zero Code Bloat", label: "Custom Architecture" },
+                { value: "Top 1% Standards", label: "Security & Scalability" },
+              ]).map((s, i) => (
+                <div key={i} className="ge-hero-stat-pill">
+                  <strong>{s.value}</strong>
+                  <span>{s.label}</span>
+                </div>
+              ))}
             </div>
 
             <div className="ge-hero__actions">
@@ -150,7 +148,7 @@ export default async function SubServicePage({ params }: Props) {
                   <h3>Why Choose Go Execution for {sub.title}</h3>
                 </div>
                 <p style={{ color: "rgba(255, 255, 255, 0.85)", lineHeight: 1.7, fontSize: "1.02rem", marginBottom: 20 }}>
-                  Generic templates limit brand scalability and cause slow load times that hurt conversions. Our {sub.title} services combine high-performance engineering, conversion rate psychology, and robust security to turn visitors into buyers.
+                  {sub.commercialObjective || `Generic templates limit brand scalability and cause slow load times that hurt conversions. Our ${sub.title} services combine high-performance engineering, conversion rate psychology, and robust security to turn visitors into buyers.`}
                 </p>
                 <div style={{ marginTop: "auto" }}>
                   <Link className="ge-button ge-button--gold ge-magnetic" href={questionnaire.href}>
@@ -336,6 +334,32 @@ export default async function SubServicePage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* --- HIGH-INTENT CLOSING CTA --- */}
+        <section className="ge-section ge-dark-section" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.08)", textAlign: "center" }}>
+          <div className="ge-container" style={{ maxWidth: "860px", margin: "0 auto" }}>
+            <p className="ge-eyebrow ge-eyebrow--gold">{sub.closingCta?.eyebrow || "Start Your Build"}</p>
+            <h2 style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", marginBottom: "20px" }}>
+              {sub.closingCta?.title || `Ready to Scale with Custom ${sub.title}?`}
+            </h2>
+            <p style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "1.1rem", lineHeight: "1.7", marginBottom: "32px" }}>
+              {sub.closingCta?.copy || "Schedule a technical architecture discovery session with our senior pod in Dallas, Texas. We will analyze your requirements and deliver a concrete engineering blueprint."}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap", marginBottom: "24px" }}>
+              <Link className="ge-button ge-button--gold ge-magnetic" href={sub.closingCta?.buttonHref || questionnaire.href}>
+                <span>{sub.closingCta?.buttonText || questionnaire.label}</span>
+              </Link>
+              {sub.closingCta?.secondaryButtonText && (
+                <Link className="ge-button ge-button--outline" href={sub.closingCta.secondaryButtonHref || "/contact/"}>
+                  <span>{sub.closingCta.secondaryButtonText}</span>
+                </Link>
+              )}
+            </div>
+            <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.95rem" }}>
+              Or speak directly with our team at (469) 666-0225 • 13345 N Central Expy, Dallas, TX
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );

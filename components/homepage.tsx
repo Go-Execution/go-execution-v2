@@ -14,41 +14,41 @@ import { TestimonialShowcase, type Testimonial } from "@/components/testimonial-
 const growthSteps = [
   {
     num: "01",
-    label: "Discover",
-    title: "Discover & Analyze",
-    copy: "We analyse your business, audience, competitors and existing digital presence to identify the highest-value opportunities.",
+    label: "Audit",
+    title: "Deep Audit & Discovery Sprint",
+    copy: "We tear down your current codebase, crawl logs, competitor ad spend, and conversion drop-offs to locate the exact leak in your revenue engine.",
     image: "/assets/images/stock/service-digital-marketing.jpg",
     alt: "Digital Agency Discovery & Analysis by Go Execution",
   },
   {
     num: "02",
-    label: "Strategise",
-    title: "Strategise & Plan",
-    copy: "We turn those findings into a practical digital strategy aligned with your commercial objectives.",
+    label: "Blueprint",
+    title: "Technical Blueprint & Roadmap",
+    copy: "Before writing a line of code, we map out the tech stack, keyword architecture, database schema, and high-converting wireframes for your approval.",
     image: "/assets/images/stock/industry-professional-services.jpg",
     alt: "Digital Strategy Planning by Go Execution",
   },
   {
     num: "03",
-    label: "Build",
-    title: "Build & Execute",
-    copy: "Our developers, designers and marketers create the website, campaigns and digital experiences required to execute the strategy.",
+    label: "Engineer",
+    title: "High-Speed Engineering & Content Build",
+    copy: "Our developers and creators build your platform with modular components, lightning-fast edge caching, and semantic search markup.",
     image: "/assets/images/stock/service-web-development.jpg",
     alt: "Web Engineering & Marketing Execution by Go Execution",
   },
   {
     num: "04",
     label: "Launch",
-    title: "Launch & Measure",
-    copy: "We launch your digital assets and establish the measurement systems needed to track performance.",
+    title: "Zero-Downtime Launch & Tracking",
+    copy: "We deploy with 100% redirect preservation, configure server-side conversion tracking, and launch paid search funnels simultaneously.",
     image: "/assets/images/stock/subservice-website-redesign.jpg",
     alt: "Digital Asset Launch & Performance Tracking by Go Execution",
   },
   {
     num: "05",
-    label: "Optimise",
-    title: "Optimise & Scale",
-    copy: "We use performance data to identify improvements and continuously refine your digital presence and marketing activity.",
+    label: "Scale",
+    title: "Continuous Growth & Conversion Loop",
+    copy: "We monitor Core Web Vitals, A/B test conversion bottlenecks, and scale search rankings to compound your customer acquisition month over month.",
     image: "/assets/images/stock/service-seo.jpg",
     alt: "Digital Performance Optimization by Go Execution",
   },
@@ -60,60 +60,60 @@ const homepageIndustries = [
     number: "01",
     tag: "PROPERTY & MLS",
     title: "Real Estate & Development",
-    desc: "Custom MLS/IDX property search platforms, seller valuation funnels, and high-converting brokerage websites.",
+    desc: "Fast IDX/MLS search platforms that don't crash under high volume, paired with automated property valuation funnels that capture high-equity seller leads.",
     image: "/assets/images/stock/industry-real-estate.jpg",
     feature: "MLS/IDX Integration & Listing Leads",
-      cta: "Explore Property Growth",
+    cta: "See MLS Platforms",
   },
   {
     slug: "fashion",
     number: "02",
     tag: "E-COMMERCE & LUXURY",
     title: "Fashion & Apparel",
-    desc: "Sub-second Shopify & Next.js luxury storefronts, paid social video campaigns, and brand identity systems.",
+    desc: "Sub-second headless storefronts with instant 1-click checkout. Eliminate cart abandonment and scale paid TikTok & Meta campaigns profitably.",
     image: "/assets/images/stock/industry-fashion.jpg",
     feature: "Headless E-Commerce & UGC Ads",
-      cta: "Scale Your Brand",
+    cta: "Explore Headless Storefronts",
   },
   {
     slug: "health-wellness",
     number: "03",
-    tag: "CLINICAL & WELLNESS",
+    tag: "CLINICAL & HEALTHCARE",
     title: "Health & Wellness",
-    desc: "HIPAA-compliant patient booking portals, local search optimization, and reputation management funnels.",
+    desc: "HIPAA-conscious patient booking portals, local Google Map Pack dominance, and automated review systems that build community trust.",
     image: "/assets/images/stock/industry-health-wellness.jpg",
     feature: "HIPAA Portals & Local Map Pack SEO",
-      cta: "View Patient Funnels",
+    cta: "View Patient Booking Systems",
   },
   {
     slug: "technology",
     number: "04",
-    tag: "SAAS & TECH",
+    tag: "SAAS & B2B TECH",
     title: "Technology & B2B SaaS",
-    desc: "High-converting product landing pages, technical SEO, demo booking funnels, and brand positioning.",
+    desc: "High-converting interactive demo funnels, technical SaaS SEO, and modern documentation platforms built on Next.js to shorten your sales cycle.",
     image: "/assets/images/stock/industry-technology.jpg",
     feature: "Demo Booking & Technical SEO",
-      cta: "Scale SaaS Revenue",
+    cta: "Scale B2B Pipeline",
   },
   {
     slug: "professional-services",
     number: "05",
     tag: "LEGAL & FINANCIAL",
     title: "Professional Services",
-    desc: "Authority-building digital platforms, practice area SEO, and high-value consultation lead generation.",
+    desc: "Authority-building digital platforms and practice-area search rankings engineered to convert high-net-worth consultation inquiries.",
     image: "/assets/images/stock/industry-professional-services.jpg",
     feature: "Consultation Funnels & Organic Growth",
-      cta: "Grow Firm Authority",
+    cta: "Build Firm Authority",
   },
   {
     slug: "hospitality",
     number: "06",
-    tag: "HOTELS & DINING",
+    tag: "LUXURY RESORTS & DINING",
     title: "Hospitality & Leisure",
-    desc: "Immersive venue showcases, direct booking engines, promo video animation, and local search campaigns.",
+    desc: "Direct-booking web architectures with interactive visual menus and 4K video storytelling that bypass third-party OTA commission fees.",
     image: "/assets/images/stock/industry-hospitality.jpg",
     feature: "Direct Booking & Video Marketing",
-      cta: "Boost Direct Bookings",
+    cta: "Boost Direct Bookings",
   },
 ];
 
@@ -125,14 +125,30 @@ const testimonials: readonly Testimonial[] = [
 ] as const;
 
 export const homepageFaqs = [
-  { question: "What does a digital marketing agency do?", answer: "A digital marketing agency helps businesses attract, engage, and convert clients through strategy, custom web development, SEO, paid advertising, content marketing, and conversion optimization." },
-  { question: "What digital marketing services does Go Execution provide?", answer: "We provide full-service digital solutions including web development, technical SEO, digital marketing, design & branding, video animation, and mobile app development." },
-  { question: "How can a digital marketing agency help my business grow?", answer: "By unifying your digital channels, optimizing user journeys for conversion, and continuously refining traffic acquisition strategies based on performance data." },
-  { question: "Does Go Execution work with small businesses?", answer: "Yes. We engineer scalable digital platforms and targeted search strategies tailored to the budget, market, and growth goals of small businesses." },
-  { question: "Does Go Execution provide SEO services?", answer: "Yes. We deliver technical SEO, local Google Maps optimization, ecommerce SEO, and content strategies designed to increase organic search rankings." },
-  { question: "Does Go Execution build custom websites?", answer: "Yes. We build high-performance custom websites using Next.js, React, WordPress, Shopify, and custom landing page architectures." },
-  { question: "How long does a digital marketing project take?", answer: "Project timelines vary by scope: custom website development typically takes 4 to 8 weeks, while marketing campaigns and SEO launch within 1 to 2 weeks." },
-  { question: "How much do digital marketing services cost?", answer: "Pricing depends on your scope, technical requirements, and business objectives. Explore our starting packages or request a custom proposal." }
+  {
+    question: "How does Go Execution differ from a typical WordPress template agency?",
+    answer: "Most agencies buy a $50 WordPress theme, install 40 bloated plugins, and hand you a slow website that fails Google's Core Web Vitals. We hand-engineer custom platforms using Next.js and TypeScript. The result is sub-second load times, rock-solid security, superior organic search rankings, and significantly higher conversion rates."
+  },
+  {
+    question: "How fast can we launch our custom website or marketing campaign?",
+    answer: "A custom Next.js web application or corporate platform typically launches within 4 to 6 weeks, following our structured 5-step sprint framework. Targeted paid search and social campaigns can be architected, tracked, and deployed in under 7 business days."
+  },
+  {
+    question: "Do you lock our business into long-term retainer contracts?",
+    answer: "No. We believe in earning your business through measurable monthly ROI, not 12-month handcuffs. Our retainer agreements are flexible, transparent, and driven by agreed commercial KPIs."
+  },
+  {
+    question: "Will our new website actually pass Google Core Web Vitals?",
+    answer: "Yes, guaranteed. We test every build against Google's real-world field metrics—guaranteeing sub-2.0s Largest Contentful Paint (LCP), sub-150ms Interaction to Next Paint (INP), and zero Cumulative Layout Shift (CLS)."
+  },
+  {
+    question: "Do we own the source code, ad accounts, and design assets?",
+    answer: "100% yes. You receive complete administrative ownership of your GitHub repositories, Vercel deployments, Figma design libraries, Google Ads accounts, and analytics properties. We never hold your assets hostage."
+  },
+  {
+    question: "Can you migrate our existing website without losing our current SEO rankings?",
+    answer: "Yes. We execute a comprehensive zero-loss migration protocol: cataloging every indexed URL, mapping precise 301 redirects, preserving page intent and metadata, and monitoring Search Console crawl logs during deployment."
+  }
 ] as const;
 
 const homeHeroContent = {
@@ -203,7 +219,7 @@ export async function Homepage() {
 
       {/* --- TRUST STATISTICS --- */}
       <section className="ge-stats" aria-label="Agency statistics"><div className="ge-container ge-stats__grid ge-stats--navy">
-        {[["120", "+", "Websites Created"], ["80", "+", "Marketing Campaigns"], ["25", "+", "Mobile Apps Built"], ["250", "+", "Projects Delivered"]].map(([value, suffix, label]) => (
+        {[["120", "+", "Custom Platforms Engineered"], ["85", "+", "High-ROAS Ad Campaigns"], ["98", "%", "Client Retention Rate"], ["250", "+", "Digital Milestones Delivered"]].map(([value, suffix, label]) => (
           <div className="ge-stat ge-reveal" key={label}>
             <strong data-counter={value} data-suffix={suffix}>{value}{suffix}</strong>
             <span>{label}</span>
@@ -218,11 +234,11 @@ export async function Homepage() {
       <section id="work" className="ge-section ge-work"><div className="ge-container">
         <div className="ge-section-heading ge-section-heading--wide ge-reveal">
           <div>
-            <p className="ge-eyebrow">Proven Case Studies</p>
-            <h2>Featured Web, Marketing &amp; Branding Projects</h2>
+            <p className="ge-eyebrow">Proven Track Record</p>
+            <h2>Real Businesses. Measurable Commercial Outcomes.</h2>
           </div>
           <p>
-            Explore selected Go Execution projects across web development, ecommerce, branding, digital marketing, video and mobile applications. Each project is built around a specific business challenge, audience and growth objective.
+            We don't build generic mockups to look good in agency awards. Every platform in our portfolio was engineered to solve a specific revenue bottleneck—cutting bounce rates, ranking in competitive US markets, and generating qualified leads.
           </p>
         </div>
         <PortfolioGrid items={content.portfolio.filter((project) => project.category === "Website Design & Development")} initialLimit={6} includeAll={false} deferCatalogue showViewAll />
@@ -234,11 +250,11 @@ export async function Homepage() {
           <div className="ge-section-heading ge-section-heading--wide ge-reveal" style={{ marginBottom: 36 }}>
             <div>
               <p className="ge-eyebrow">Sector-Specific Strategy</p>
-              <h2 style={{ color: "#0d1b2a" }}>Digital Marketing for Businesses Across Industries</h2>
+              <h2 style={{ color: "#0d1b2a" }}>Engineered for High-Stakes Industries</h2>
             </div>
             <div>
               <p style={{ color: "#475569", marginBottom: 18 }}>
-                Our digital strategies are adapted to the audience, buying journey, and competitive environment of each business sector. Explore custom web &amp; marketing solutions designed around measurable growth.
+                Every vertical has unique compliance constraints, buyer cycles, and conversion bottlenecks. We architect custom digital growth systems tailored to your specific commercial reality.
               </p>
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginTop: "1.5rem" }}>
                 <Link className="ge-button ge-button--outline" href="/industries/">
@@ -314,9 +330,9 @@ export async function Homepage() {
       {/* --- WHY GO EXECUTION SECTION --- */}
       <section className="ge-section ge-why ge-why--split"><div className="ge-why__watermark" aria-hidden="true"><Image src="/assets/images/ce-icon.png" alt="" width={1200} height={1200} sizes="100vw" /></div><div className="ge-container ge-why__grid">
         <div className="ge-why__lead ge-reveal" data-reveal="left">
-          <p className="ge-eyebrow ge-eyebrow--light">Integrated Growth Team</p>
-          <h2>Why Businesses Choose Go Execution</h2>
-          <p>Strategy, technology, creative and performance marketing work together under one team, giving businesses a clearer path from digital presence to measurable growth.</p>
+          <p className="ge-eyebrow ge-eyebrow--light">The Go Execution Difference</p>
+          <h2>Why High-Growth Companies Fire Other Agencies &amp; Hire Us</h2>
+          <p>You don't need another junior account manager forwarding emails or an offshore developer breaking your checkout page. We provide a dedicated senior squad that treats your digital infrastructure like an investment portfolio.</p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginTop: "2rem" }}>
             <Link className="ge-why__cta-btn" href="/about/"><span>Discover Our Approach</span></Link>
             <Link className="ge-button ge-button--gold" href="/contact/"><span>Speak with an Expert</span></Link>
@@ -324,10 +340,10 @@ export async function Homepage() {
         </div>
         <div className="ge-why-cards">
           {[
-            { title: "Full-Service Digital Marketing", copy: "Bring web development, SEO, paid advertising, content and creative together without managing disconnected agency teams." },
-            { title: "Conversion-Focused Development", copy: "We design digital experiences around usability, performance and the actions that matter to your business." },
-            { title: "Data-Driven Marketing", copy: "Use measurable performance data to understand what is working, identify opportunities and improve digital campaigns over time." },
-            { title: "Scalable Digital Solutions", copy: "Build websites, marketing systems and digital products that can evolve as your audience, content and business requirements grow." },
+            { title: "Zero-Bloat Codebases", copy: "We build on modern architectures (Next.js, React, TypeScript). That means zero vulnerable plugins, instantaneous page loads, and 100/100 Core Web Vitals out of the box." },
+            { title: "Direct Senior Communication", copy: "You speak directly to the engineers, search strategists, and designers executing your project. Zero bureaucratic layers, no phone-tag, and weekly transparent sprints." },
+            { title: "Revenue Attribution, Not Vanity Clicks", copy: "Anyone can buy cheap traffic. We track the entire visitor funnel from ad impression to closed customer, relentlessly optimizing cost per qualified acquisition (CPA)." },
+            { title: "You Own 100% of Your Assets", copy: "No proprietary agency lock-ins. You receive full ownership of your clean source code, repositories, analytics properties, ad accounts, and design tokens on day one." },
           ].map((item, index) => (
             <div className="ge-why-card ge-reveal" data-reveal="right" style={{ "--card-index": index, transitionDelay: `${index * 120}ms` } as React.CSSProperties} key={item.title}>
               <div className="ge-why-card__top">
@@ -343,10 +359,10 @@ export async function Homepage() {
       {/* --- DIGITAL GROWTH PROCESS SECTION --- */}
       <section className="ge-section ge-problems ge-growth-redesign ge-growth-redesign--story"><div className="ge-container">
         <div className="ge-problems-heading ge-reveal">
-          <p className="ge-eyebrow">5-Step Delivery Framework</p>
-          <h2>Our Digital Growth Process</h2>
+          <p className="ge-eyebrow">Accountable Execution Framework</p>
+          <h2>From Architecture to Market Dominance in 5 Sprints</h2>
           <div>
-            <p className="ge-growth-redesign__intro" style={{ marginTop: 0 }}>A structured, data-informed workflow designed to turn commercial objectives into measurable results across web engineering and marketing campaigns.</p>
+            <p className="ge-growth-redesign__intro" style={{ marginTop: 0 }}>A battle-tested deployment methodology that guarantees on-time delivery with zero surprises.</p>
             <div style={{ marginTop: "1.5rem", display: "flex", gap: "16px", flexWrap: "wrap" }}>
               <Link className="ge-button ge-button--outline" href="/portfolio/">
                 <span>View Past Campaigns</span>
@@ -384,9 +400,9 @@ export async function Homepage() {
       <section className="ge-section ge-pricing"><div className="ge-container">
         <div className="ge-section-heading ge-reveal">
           <div>
-            <p className="ge-eyebrow">Our Pricings</p>
-            <h2>Website &amp; Digital Growth Packages</h2>
-            <p style={{ marginTop: 12, color: "#cbd5e1" }}>Choose a starting package for your website or speak with our team about a solution tailored to your business, goals and technical requirements.</p>
+            <p className="ge-eyebrow">Transparent Investment</p>
+            <h2>Predictable Pricing. Zero Surprise Retainers.</h2>
+            <p style={{ marginTop: 12, color: "#cbd5e1" }}>Choose a dedicated growth package engineered for your stage of business, or contact our team for a tailored enterprise build. Fixed scopes, clear deliverables, no hidden hourly fees.</p>
           </div>
         </div>
         <PricingGrid groups={content.pricing} />
@@ -397,7 +413,7 @@ export async function Homepage() {
         <div className="ge-container">
           <div className="ge-section-heading ge-reveal" style={{ marginBottom: 48 }}>
             <p className="ge-eyebrow">Clear Answers</p>
-            <h2>Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions About Partnering With Us</h2>
           </div>
           <div className="ge-reveal">
             <FaqAccordion items={homepageFaqs} idPrefix="home-faq" />

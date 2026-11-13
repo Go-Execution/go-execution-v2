@@ -15,7 +15,7 @@ export function JsonLd({ data }: JsonLdProps) {
 
 export function buildOrganization() {
   return {
-    "@type": ["Organization", "LocalBusiness"],
+    "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
     "@id": `${site.url}/#organization`,
     name: site.name,
     alternateName: site.alternateName,
@@ -37,16 +37,96 @@ export function buildOrganization() {
       postalCode: site.address.postalCode,
       addressCountry: site.address.addressCountry,
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.geo.latitude,
+      longitude: site.geo.longitude,
+    },
+    openingHoursSpecification: site.openingHoursSpecification.map((spec) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: spec.dayOfWeek,
+      opens: spec.opens,
+      closes: spec.closes,
+    })),
     contactPoint: {
       "@type": "ContactPoint",
-      "telephone": site.phone,
-      "contactType": "customer service",
-      "areaServed": "US"
+      telephone: site.phone,
+      contactType: "customer service",
+      areaServed: "US",
     },
-    areaServed: "US",
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+    },
     sameAs: site.sameAs,
     location: { "@id": `${site.url}/#place` },
     priceRange: "$$",
+    knowsAbout: [
+      "Custom Web Development",
+      "Next.js React Engineering",
+      "Search Engine Optimization (SEO)",
+      "Technical SEO Audits",
+      "Generative Engine Optimization (GEO)",
+      "Digital Marketing & Paid Media",
+      "PPC Advertising",
+      "Brand Identity Design",
+      "Video Animation",
+      "Mobile App Development",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Go Execution Digital Growth Practice",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Custom Web Development Services",
+            url: `${site.url}/services/web-development/`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Search Engine Optimization (SEO) Services",
+            url: `${site.url}/services/seo/`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Digital Marketing & Performance Media",
+            url: `${site.url}/services/digital-marketing/`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Brand Identity & Graphic Design",
+            url: `${site.url}/services/design-branding/`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Video Animation & Motion Graphics",
+            url: `${site.url}/services/video/`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Custom Mobile App Development",
+            url: `${site.url}/services/mobile-app-development/`,
+          },
+        },
+      ],
+    },
   };
 }
 
@@ -54,6 +134,7 @@ export function buildPlace() {
   return {
     "@type": "Place",
     "@id": `${site.url}/#place`,
+    name: site.name,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.streetAddress,
@@ -61,6 +142,11 @@ export function buildPlace() {
       addressRegion: site.address.addressRegion,
       postalCode: site.address.postalCode,
       addressCountry: site.address.addressCountry,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.geo.latitude,
+      longitude: site.geo.longitude,
     },
   };
 }

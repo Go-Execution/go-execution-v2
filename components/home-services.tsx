@@ -10,15 +10,15 @@ export function HomeServices() {
       <div className={`ge-container ${styles.container}`}>
         <header className={styles.header}>
           <div className={styles.headingBlock}>
-            <p className="ge-eyebrow">Integrated Growth Services</p>
+            <p className="ge-eyebrow">Full-Stack Digital Capabilities</p>
             <h2 id="home-services-title">
-              Six specialist teams.
-              <span> One accountable growth system.</span>
+              Six specialist practices.
+              <span> Zero disconnected freelancers.</span>
             </h2>
           </div>
           <div className={styles.intro}>
             <p>
-              Strategy, engineering, search, performance media, brand design, and product delivery work together to move your business from visibility to measurable revenue.
+              Most agencies sell you traffic that bounces on a broken website, or build a pretty template that ranks for nothing. We build the entire machine under one roof: sub-second custom code, technical search dominance, and ad campaigns engineered to convert.
             </p>
             <Link className="ge-button ge-button--outline" href="/services/">
               <span>Explore All Services</span>
@@ -73,9 +73,9 @@ export function HomeServices() {
         </div>
 
         <div className={styles.outcomes}>
-          <div><span>01</span><strong>One strategy across every channel</strong></div>
-          <div><span>02</span><strong>Senior specialists, not disconnected vendors</strong></div>
-          <div><span>03</span><strong>Performance measured against commercial goals</strong></div>
+          <div><span>01</span><strong>Single accountable team, zero disconnected vendors</strong></div>
+          <div><span>02</span><strong>Clean Next.js code built for speed, not bloated theme builders</strong></div>
+          <div><span>03</span><strong>Profit-first attribution measured against commercial revenue</strong></div>
           <Link href="/contact/">Build your growth system <b aria-hidden="true">→</b></Link>
         </div>
       </div>

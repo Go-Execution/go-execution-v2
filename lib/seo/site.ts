@@ -19,10 +19,21 @@ export const site = {
   sameAs: [
     "https://www.facebook.com/GoExecution",
     "https://www.instagram.com/go_execution/",
-    "https://www.google.com/maps?cid=YOUR_CID_HERE",
+    "https://share.google/m9JdvHrPUTdhjxUkz",
     "https://clutch.co/profile/go-execution",
     "https://www.trustpilot.com/review/goexecution.com",
     "https://www.goodfirms.co/company/go-execution",
     "https://www.linkedin.com/company/go-execution-llc"
+  ],
+  geo: {
+    latitude: 32.9288,
+    longitude: -96.7538,
+  },
+  openingHoursSpecification: [
+    {
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
   ],
 } as const;

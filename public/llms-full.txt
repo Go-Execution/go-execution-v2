@@ -1,0 +1,91 @@
+# Go Execution — Extended Enterprise Knowledge Document (llms-full.txt)
+
+> This document contains detailed contextual knowledge, service specifications, engineering standards, and methodology documentation for Go Execution (https://goexecution.com).
+
+## 1. Agency Identity & Contact Registry
+- **Legal Entity**: Go Execution LLC
+- **Brand Name**: Go Execution
+- **Founded**: United States
+- **Corporate Headquarters**: 13345 N Central Expy, Suite 203, Dallas, TX 75243, United States
+- **Direct Telephone**: +1 (469) 499-8558
+- **Corporate Email**: info@goexecution.com
+- **Official Website**: https://goexecution.com
+- **Google Maps Profile**: https://share.google/m9JdvHrPUTdhjxUkz
+- **Operating Hours**: Monday – Friday, 09:00 AM – 06:00 PM CST
+- **Primary Service Territory**: United States (National) with key metropolitan presence in Dallas-Fort Worth, Texas, Austin, New York, Los Angeles, and Chicago.
+
+---
+
+## 2. Core Methodology: "Where Strategy Meets Execution"
+Go Execution operates on a unified growth system architecture rather than disconnected departmental silos. Every client engagement bridges commercial strategy with precision technical execution:
+1. **Discover & Audit**: Full code, architecture, crawl, conversion funnel, and competitor analysis.
+2. **Architect & Plan**: Specification of tech stack, information architecture, keyword clusters, and measurable commercial KPIs.
+3. **Build & Execute**: Clean TypeScript engineering, sub-second edge delivery, high-converting UI/UX design, and semantic schema graphs.
+4. **Grow & Scale**: Continuous conversion rate optimization, data-backed SEO velocity, and performance media scaling.
+
+---
+
+## 3. Priority Service Deep Dives
+
+### Practice 01: Custom Web Development (Priority Practice)
+- **Primary URL**: https://goexecution.com/services/web-development/custom-web-development
+- **Technology Stack**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS / Vanilla CSS Modules, Vercel Edge Network, Supabase / PostgreSQL.
+- **Architectural Standards**:
+  - Zero bloated external dependencies or unnecessary script injection.
+  - Strict Server-Side Rendering (SSR) and Static Site Generation (SSG) with instantaneous HTML delivery.
+  - Target Core Web Vitals: Largest Contentful Paint (LCP) < 2.0s, Interaction to Next Paint (INP) < 150ms, Cumulative Layout Shift (CLS) < 0.05.
+  - Native accessibility compliance adhering to WCAG 2.1 AA standards.
+  - Modular sub-services: Custom Web Engineering, Headless WordPress Development, Next.js SaaS Application Development, Shopify & Headless E-Commerce, High-Speed Landing Page Engineering, Zero-Loss Website Redesign, and Core Web Vitals Speed Optimization.
+
+### Practice 02: Search Engine Optimization (SEO) & Technical Audits (Priority Practice)
+- **Primary URL**: https://goexecution.com/services/seo/technical-seo
+- **Core Methodology**:
+  - **Technical Crawl Infrastructure**: Optimizing HTTP status codes, removing redirect chains, generating dynamic XML sitemaps, validating robots.txt directives, and eliminating JavaScript rendering barriers.
+  - **Schema.org Connected Knowledge Graph**: Multi-entity JSON-LD mapping linking Organization, LocalBusiness, ProfessionalService, Service, WebSite, BreadcrumbList, and Article schemas into a single coherent graph.
+  - **Generative Engine Optimization (GEO)**: Optimizing passages specifically for Google AI Overviews, Perplexity, and ChatGPT search. Front-loading 134–167 word self-contained, fact-dense answer blocks in the top 30% of content.
+  - **Topical Keyword Authority**: Building comprehensive content clusters around high-intent commercial and informational queries, establishing primary entity authority without keyword stuffing.
+  - **Local SEO & Map Pack Optimization**: Complete Google Business Profile (GBP) management, local NAP consistency, location page architecture, and review acquisition funnels.
+
+### Practice 03: Digital Marketing & Performance Paid Media
+- **Primary URL**: https://goexecution.com/services/digital-marketing/
+- **Capabilities**:
+  - Paid Search Advertising (PPC): High-ROAS Google Ads (Search, Performance Max, Shopping) and Microsoft Advertising.
+  - Paid Social Media Marketing: Targeted lead acquisition and direct-to-consumer e-commerce scaling across Meta (Facebook, Instagram), TikTok, and LinkedIn.
+  - Conversion Rate Optimization (CRO): Rigorous A/B split testing, user journey friction audits, form optimization, and heatmap behavior analysis.
+  - Content Marketing: Authoritative technical guides, comparison frameworks, and customer acquisition lead magnets.
+
+### Practice 04: Brand Identity & Graphic Design
+- **Primary URL**: https://goexecution.com/services/design-branding/
+- **Capabilities**:
+  - Logo Design: Distinctive, timeless vector marks engineered for multi-resolution digital and print deployment.
+  - Brand Visual Systems: Complete typography rules, chromatic token systems, iconography sets, and digital brand books.
+  - Marketing Collateral: Enterprise presentation decks, product packaging, advertising creatives, and digital brand assets.
+
+### Practice 05: Video Animation & Motion Design
+- **Primary URL**: https://goexecution.com/services/video/
+- **Capabilities**:
+  - 2D Vector Animation: Dynamic character animation and software interface walkthroughs.
+  - 3D Motion & Product Visualization: Photorealistic CAD rendering, exploded product views, and cinematic lighting.
+  - Explainer Videos: High-converting 60-to-90 second animated video assets that articulate complex B2B products and services.
+
+### Practice 06: Custom Mobile App Development
+- **Primary URL**: https://goexecution.com/services/mobile-app-development/
+- **Capabilities**: Cross-platform iOS and Android application engineering utilizing React Native and Flutter with native performance characteristics and secure API integrations.
+
+---
+
+## 4. Industry Vertical Solutions
+- **B2B SaaS & Technology**: Fast Next.js platforms, interactive product demos, and technical SEO designed for software founders.
+- **Commercial & Luxury Real Estate**: High-performance IDX/MLS integration, virtual property tours, and buyer/seller lead generation funnels.
+- **E-Commerce & Retail**: Frictionless checkout architectures, headless Shopify builds, and product schema optimization.
+- **Professional & Corporate Services**: High-trust digital platforms for legal firms, accounting practices, and executive consultancies.
+- **Healthcare & Wellness**: HIPAA-compliant patient portals, clear practitioner directories, and local clinic SEO.
+- **Hospitality & Resorts**: Direct booking conversion engines that reduce third-party OTA commission dependency.
+
+---
+
+## 5. Technical Quality Gates & Compliance Standards
+1. **Core Web Vitals**: Every production route is monitored against INP, LCP, and CLS field benchmarks.
+2. **JavaScript Rendering for AI Crawlers**: All primary content is rendered server-side so AI bots (which do not run heavy JavaScript engines) receive 100% of the textual content and structured data.
+3. **No Thin Content**: Every service and landing page adheres to a minimum 1,000+ words of rich, original, and deeply technical content.
+4. **Canonical Integrity**: All URLs enforce lowercase formatting and strict trailing slashes (`https://goexecution.com/.../`).

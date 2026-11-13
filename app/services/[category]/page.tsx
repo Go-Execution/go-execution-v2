@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCategory, getSubServicesForCategory, serviceCategories } from "@/lib/services";
 import { blogPosts, formatBlogDate } from "@/lib/blog-posts";
+import { FaqAccordion } from "@/components/interactive-sections";
 import { JsonLd, buildService, buildWebPage, buildBreadcrumbList , buildOrganization, buildWebSite } from "@/lib/seo/jsonld";
 
 type Props = { params: Promise<{ category: string }> };
@@ -45,7 +46,7 @@ export default async function CategoryHubPage({ params }: Props) {
     "@graph": [
         buildOrganization(),
         buildWebSite(),
-      buildService({ path, name: cat.title, description: cat.intro }),
+      buildService({ path, name: cat.title, description: cat.geoOverview || cat.intro }),
       buildWebPage({ path, title: cat.title }),
       buildBreadcrumbList([
         { name: "Home", url: "/" },
@@ -80,25 +81,23 @@ export default async function CategoryHubPage({ params }: Props) {
             </div>
 
             <h1 className="ge-hero__title">
-              {cat.title} <span className="ge-title-accent">For Businesses</span>
+              {cat.h1Title || cat.title} <span className="ge-title-accent">{cat.h1Accent || "For Businesses"}</span>
             </h1>
 
             <p className="ge-hero__copy">{cat.intro}</p>
 
             {/* Metrics Bar */}
             <div className="ge-hero-stats">
-              <div className="ge-hero-stat-pill">
-                <strong>Sub-1s Speed</strong>
-                <span>Core Web Vitals Optimized</span>
-              </div>
-              <div className="ge-hero-stat-pill">
-                <strong>100% Custom</strong>
-                <span>Zero Code Bloat</span>
-              </div>
-              <div className="ge-hero-stat-pill">
-                <strong>{subServicesList.length} Specialized</strong>
-                <span>Service Architectures</span>
-              </div>
+              {(cat.stats || [
+                { value: "Sub-2.0s LCP", label: "Core Web Vitals Target" },
+                { value: "100% Custom", label: "Zero Code Bloat" },
+                { value: `${subServicesList.length} Specialized`, label: "Service Architectures" },
+              ]).map((s, i) => (
+                <div key={i} className="ge-hero-stat-pill">
+                  <strong>{s.value}</strong>
+                  <span>{s.label}</span>
+                </div>
+              ))}
             </div>
 
             <div className="ge-hero__actions">
@@ -131,7 +130,7 @@ export default async function CategoryHubPage({ params }: Props) {
                   <h3>Why Our {cat.title} Wins</h3>
                 </div>
                 <p style={{ color: "rgba(255, 255, 255, 0.85)", lineHeight: 1.7, fontSize: "1.02rem" }}>
-                  We replace slow, generic templates with high-performance engineered platforms. Every component is built for rapid search engine indexing, high-performance loading, and maximum visitor lead conversion.
+                  {cat.geoOverview}
                 </p>
               </div>
 
@@ -249,57 +248,50 @@ export default async function CategoryHubPage({ params }: Props) {
             </div>
 
             <div className="ge-grid ge-grid--4col" style={{ marginTop: 24 }}>
-              <div className="ge-process-step-v5">
-                <div className="ge-process-step-v5__top">
-                  <span className="ge-process-step-v5__num">01</span>
-                  <span className="ge-process-step-v5__badge">PHASE ONE</span>
+              {(cat.processSteps || [
+                {
+                  num: "01",
+                  badge: "PHASE ONE",
+                  title: "Discovery & Architecture",
+                  desc: "Analyzing commercial goals, user search intent, and technical specifications.",
+                  bullets: ["Scope & Architecture Plan", "Competitor Benchmark"],
+                },
+                {
+                  num: "02",
+                  badge: "PHASE TWO",
+                  title: "UX & Wireframing",
+                  desc: "Designing interactive prototypes built for visitor conversion performance.",
+                  bullets: ["Figma Design System", "Conversion Funnel Test"],
+                },
+                {
+                  num: "03",
+                  badge: "PHASE THREE",
+                  title: "Clean Code Engineering",
+                  desc: "Developing lightweight Next.js 16, React 19, and TypeScript code.",
+                  bullets: ["Zero Code Bloat", "Schema & API Sync"],
+                },
+                {
+                  num: "04",
+                  badge: "PHASE FOUR",
+                  title: "QA, Speed & Launch",
+                  desc: "Rigorous Core Web Vitals audits, security hardening, and live launch.",
+                  bullets: ["Core Web Vitals Speed Audit", "Search Infrastructure & Schema Verification"],
+                },
+              ]).map((step) => (
+                <div key={step.num} className="ge-process-step-v5">
+                  <div className="ge-process-step-v5__top">
+                    <span className="ge-process-step-v5__num">{step.num}</span>
+                    <span className="ge-process-step-v5__badge">{step.badge}</span>
+                  </div>
+                  <h3 className="ge-process-step-v5__title">{step.title}</h3>
+                  <p className="ge-process-step-v5__desc">{step.desc}</p>
+                  <ul className="ge-process-step-v5__bullets">
+                    {step.bullets.map((b, i) => (
+                      <li key={i}>{b}</li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="ge-process-step-v5__title">Discovery & Architecture</h3>
-                <p className="ge-process-step-v5__desc">Analyzing commercial goals, user search intent, and technical specs.</p>
-                <ul className="ge-process-step-v5__bullets">
-                  <li>Scope & Architecture Plan</li>
-                  <li>Competitor Benchmark</li>
-                </ul>
-              </div>
-
-              <div className="ge-process-step-v5">
-                <div className="ge-process-step-v5__top">
-                  <span className="ge-process-step-v5__num">02</span>
-                  <span className="ge-process-step-v5__badge">PHASE TWO</span>
-                </div>
-                <h3 className="ge-process-step-v5__title">UX & Wireframing</h3>
-                <p className="ge-process-step-v5__desc">Designing interactive prototypes built for visitor conversion performance.</p>
-                <ul className="ge-process-step-v5__bullets">
-                  <li>Figma Design System</li>
-                  <li>Conversion Funnel Test</li>
-                </ul>
-              </div>
-
-              <div className="ge-process-step-v5">
-                <div className="ge-process-step-v5__top">
-                  <span className="ge-process-step-v5__num">03</span>
-                  <span className="ge-process-step-v5__badge">PHASE THREE</span>
-                </div>
-                <h3 className="ge-process-step-v5__title">Clean Code Engineering</h3>
-                <p className="ge-process-step-v5__desc">Developing lightweight Next.js 16, React 19, and TypeScript code.</p>
-                <ul className="ge-process-step-v5__bullets">
-                  <li>Zero Code Bloat</li>
-                  <li>Schema & API Sync</li>
-                </ul>
-              </div>
-
-              <div className="ge-process-step-v5">
-                <div className="ge-process-step-v5__top">
-                  <span className="ge-process-step-v5__num">04</span>
-                  <span className="ge-process-step-v5__badge">PHASE FOUR</span>
-                </div>
-                <h3 className="ge-process-step-v5__title">QA, Speed & Launch</h3>
-                <p className="ge-process-step-v5__desc">Rigorous Core Web Vitals audits, security hardening, and live launch.</p>
-                <ul className="ge-process-step-v5__bullets">
-                  <li>Sub-1s LCP Speed Audit</li>
-                  <li>SEO Indexing Guarantee</li>
-                </ul>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -344,6 +336,42 @@ export default async function CategoryHubPage({ params }: Props) {
             </section>
           );
         })()}
+
+        {/* --- FAQ SECTION --- */}
+        {cat.faqs && cat.faqs.length > 0 && (
+          <section className="ge-section ge-faq" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
+            <div className="ge-container">
+              <div className="ge-section-heading ge-reveal" style={{ marginBottom: 48 }}>
+                <p className="ge-eyebrow">Clear Answers</p>
+                <h2>Frequently Asked {cat.title} Questions</h2>
+              </div>
+              <div className="ge-reveal">
+                <FaqAccordion items={cat.faqs} idPrefix={`${cat.slug}-faq`} />
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* --- HIGH-INTENT CLOSING CTA --- */}
+        <section className="ge-section ge-dark-section" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.08)", textAlign: "center" }}>
+          <div className="ge-container" style={{ maxWidth: "860px", margin: "0 auto" }}>
+            <p className="ge-eyebrow ge-eyebrow--gold">{cat.closingCta?.eyebrow || "Start Your Project"}</p>
+            <h2 style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", marginBottom: "20px" }}>
+              {cat.closingCta?.title || `Ready to Scale Your ${cat.title}?`}
+            </h2>
+            <p style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "1.1rem", lineHeight: "1.7", marginBottom: "32px" }}>
+              {cat.closingCta?.copy || "Schedule a discovery session with our senior pod in Dallas, Texas. We will analyze your digital goals and map out a clear execution plan."}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap", marginBottom: "24px" }}>
+              <Link className="ge-button ge-button--gold ge-magnetic" href="/contact/">
+                <span>{cat.closingCta?.buttonText || "Schedule Strategy Consultation →"}</span>
+              </Link>
+            </div>
+            <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.95rem" }}>
+              Or speak directly with our team at (469) 666-0225 • 13345 N Central Expy, Dallas, TX
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );

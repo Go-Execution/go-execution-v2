@@ -1,64 +1,78 @@
 # Go Execution
 
-> Go Execution is a premier full-service digital marketing agency in the USA specializing in custom web development, search engine optimization (SEO), paid performance advertising (PPC), brand identity design, 2D/3D video animation, and custom mobile app development.
+> Go Execution is a premier full-service digital marketing, web engineering, and search optimization agency headquartered in Dallas, Texas. We specialize in custom web development, technical SEO, performance paid media (PPC), brand identity design, 2D/3D video animation, and custom mobile app development for US businesses.
 
 ## Agency Overview
-- **Headquarters**: Dallas, Texas, USA
-- **Service Area**: Nationwide across the United States
-- **Core Philosophy**: "Where Strategy Meets Execution" - engineering high-performance web platforms, improving search visibility, and driving measurable revenue growth for US businesses.
+- **Headquarters**: 13345 N Central Expy, Suite 203, Dallas, TX 75243, United States
+- **Phone**: +1 (469) 499-8558
+- **Email**: info@goexecution.com
+- **Google Maps**: https://share.google/m9JdvHrPUTdhjxUkz
 - **Website**: https://goexecution.com
-- **Contact & Consultation**: https://goexecution.com/contact
-- **Pricing & Packages**: https://goexecution.com/pricing
 - **Sitemap**: https://goexecution.com/sitemap.xml
+- **Service Area**: Nationwide across the United States
+- **Core Value Proposition**: "Where Strategy Meets Execution" — engineering sub-second web platforms, dominating high-intent organic search rankings, and building accountable growth systems that convert traffic into measurable revenue.
 
-## Core Services
+## Core Growth Practices
 
 ### 1. Web Development Services
-- **Custom Web Development**: Bespoke, high-speed web platforms engineered with Next.js, React, and TypeScript with zero code bloat. (URL: https://goexecution.com/services/web-development/custom-web-development)
-- **WordPress Development**: Custom block-based WordPress themes and enterprise CMS architectures built without heavy plugins. (URL: https://goexecution.com/services/web-development/wordpress-development)
-- **Next.js Development**: Fast server-side rendered (SSR) React web applications with edge caching. (URL: https://goexecution.com/services/web-development/nextjs-development)
-- **E-Commerce Web Development**: High-converting Shopify and headless commerce storefronts with 1-click checkout flows. (URL: https://goexecution.com/services/web-development/ecommerce-development)
-- **Landing Page Development**: High-converting, focused landing pages built for paid search and social campaigns. (URL: https://goexecution.com/services/web-development/landing-page-development)
-- **Website Redesign**: Modernizing brand presence with zero ranking loss through comprehensive 301 redirect protocols. (URL: https://goexecution.com/services/web-development/website-redesign)
-- **Website Speed & Performance Optimization**: Core Web Vitals optimization (LCP, INP, CLS) achieving high-performance load speeds. (URL: https://goexecution.com/services/web-development/website-performance)
+Go Execution builds custom, high-speed digital web platforms engineered with Next.js, React, and TypeScript. We eliminate plugin dependency and code bloat, ensuring 100/100 Core Web Vitals and frictionless conversion flows.
+- [Custom Web Development](https://goexecution.com/services/web-development/custom-web-development): Bespoke React and TypeScript web applications engineered for scalability and sub-second load times.
+- [WordPress Development](https://goexecution.com/services/web-development/wordpress-development): Modern block-based custom themes and headless architectures without bloated plugins.
+- [Next.js Development](https://goexecution.com/services/web-development/nextjs-development): Server-side rendered (SSR) React web applications with edge caching and static generation.
+- [E-Commerce Web Development](https://goexecution.com/services/web-development/ecommerce-development): Custom Shopify storefronts and headless commerce engines with streamlined checkout.
+- [Landing Page Development](https://goexecution.com/services/web-development/landing-page-development): High-converting, focused landing pages tailored for paid search and social campaigns.
+- [Website Redesign Services](https://goexecution.com/services/web-development/website-redesign): Brand modernization with comprehensive 301 redirect mapping to protect established SEO rankings.
+- [Website Speed & Performance Optimization](https://goexecution.com/services/web-development/website-performance): Comprehensive Core Web Vitals optimization targeting sub-2.0s LCP, sub-150ms INP, and zero CLS.
 
-### 2. SEO Services (Search Engine Optimization)
-- **Technical SEO**: Crawl architecture audits, JavaScript rendering fixes, XML sitemap validation, and Schema.org JSON-LD graph engineering. (URL: https://goexecution.com/services/seo/technical-seo)
-- **Local SEO**: Google Business Profile (GBP) optimization, local Map Pack dominance, geo-citations, and review funnels. (URL: https://goexecution.com/services/seo/local-seo)
-- **E-Commerce SEO**: Product catalog optimization, category hierarchy restructuring, and commercial transactional keyword rankings. (URL: https://goexecution.com/services/seo/ecommerce-seo)
-- **Small Business SEO**: High-ROI organic search strategies engineered for local and regional US service businesses. (URL: https://goexecution.com/services/seo/small-business-seo)
+### 2. Search Engine Optimization (SEO) Services
+Go Execution delivers evidence-based technical SEO and topical keyword authority that turns organic search into a predictable customer acquisition channel for US enterprises and local businesses.
+- [Technical SEO Services](https://goexecution.com/services/seo/technical-seo): Crawl budget optimization, server-side rendering, XML sitemaps, and connected Schema.org JSON-LD graphs.
+- [Local SEO Services](https://goexecution.com/services/seo/local-seo): Google Business Profile (GBP) dominance, Google Maps pack visibility, geo-citations, and review funnels.
+- [E-Commerce SEO Services](https://goexecution.com/services/seo/ecommerce-seo): Product structured data, collection architecture, and high-intent transactional search visibility.
+- [Small Business SEO Services](https://goexecution.com/services/seo/small-business-seo): High-ROI local and regional organic search strategies built for sustainable customer acquisition.
 
-### 3. Digital Marketing Services
-- **Paid Advertising (PPC)**: High-ROAS Google Ads management, Bing Ads, and paid search marketing. (URL: https://goexecution.com/services/digital-marketing/paid-advertising)
-- **Social Media Marketing**: Paid social ad campaigns across Meta (Facebook & Instagram), TikTok, and LinkedIn. (URL: https://goexecution.com/services/digital-marketing/social-media-marketing)
-- **Content Marketing**: High-authority SEO articles, thought leadership content, and lead magnets. (URL: https://goexecution.com/services/digital-marketing/content-marketing)
-- **Conversion Rate Optimization (CRO)**: Funnel drop-off audits, A/B split testing, and heatmap analysis. (URL: https://goexecution.com/services/digital-marketing/conversion-optimisation)
+### 3. Digital Marketing & Paid Advertising
+Go Execution unifies paid search, paid social, conversion rate optimization (CRO), and content marketing into an accountable growth engine.
+- [PPC Management & Google Ads](https://goexecution.com/services/digital-marketing/paid-advertising): High-ROAS Google Ads, Google Shopping, and Bing Ads management.
+- [Social Media Marketing](https://goexecution.com/services/digital-marketing/social-media-marketing): Targeted performance advertising across Meta (Facebook & Instagram), TikTok, and LinkedIn.
+- [Content Marketing Strategy](https://goexecution.com/services/digital-marketing/content-marketing): High-authority editorial content, case studies, and thought leadership assets.
+- [Conversion Rate Optimization (CRO)](https://goexecution.com/services/digital-marketing/conversion-optimisation): A/B split testing, user journey mapping, and funnel friction elimination.
 
 ### 4. Design & Branding Services
-- **Logo Design**: Timeless, scalable custom vector logo marks and iconography. (URL: https://goexecution.com/services/design-branding/logo-design)
-- **Brand Identity Systems**: Comprehensive visual guidelines, color token systems, and typography rules. (URL: https://goexecution.com/services/design-branding/brand-identity)
-- **Graphic Design**: Print and digital collateral, marketing pitch decks, and brand graphics. (URL: https://goexecution.com/services/design-branding/graphic-design)
-- **Creative Design**: Full-service creative campaign art and advertising assets. (URL: https://goexecution.com/services/design-branding/creative-design)
+Strategic brand identity systems that command authority and differentiate businesses across digital touchpoints.
+- [Logo Design Services](https://goexecution.com/services/design-branding/logo-design): Custom vector brand marks and distinctive visual identities.
+- [Brand Identity Systems](https://goexecution.com/services/design-branding/brand-identity): Color token architectures, typography hierarchies, and comprehensive brand books.
+- [Graphic Design Services](https://goexecution.com/services/design-branding/graphic-design): Print, marketing collateral, pitch decks, and digital campaign art.
+- [Creative Design Services](https://goexecution.com/services/design-branding/creative-design): Full-service creative campaign direction and visual media.
 
 ### 5. Video Animation Services
-- **Video Animation**: Dynamic 4K motion graphics and visual storytelling. (URL: https://goexecution.com/services/video/video-animation)
-- **2D Animation**: Fluid vector character animation and workflow explainers. (URL: https://goexecution.com/services/video/2d-animation)
-- **3D Animation**: Photorealistic 3D product renders, CAD exploded views, and cinematic lighting. (URL: https://goexecution.com/services/video/3d-animation)
-- **Explainer Videos**: 60-second problem-solution animated videos that clarify complex value propositions. (URL: https://goexecution.com/services/video/explainer-videos)
+Motion design that clarifies complex value propositions and drives audience engagement.
+- [Video Animation](https://goexecution.com/services/video/video-animation): 4K motion graphics, title sequences, and dynamic brand visuals.
+- [2D Animation](https://goexecution.com/services/video/2d-animation): Fluid vector character animation and workflow explainers.
+- [3D Animation](https://goexecution.com/services/video/3d-animation): Photorealistic 3D product renders, CAD models, and architectural visualizations.
+- [Explainer Videos](https://goexecution.com/services/video/explainer-videos): 60-to-90 second problem-solution animated videos engineered for conversion.
 
 ### 6. Mobile App Development Services
-- **Custom Mobile App Development**: Native-performing cross-platform iOS and Android applications built with React Native and Flutter. (URL: https://goexecution.com/services/mobile-app-development/custom-mobile-app-development)
+- [Custom Mobile App Development](https://goexecution.com/services/mobile-app-development/custom-mobile-app-development): High-performance cross-platform iOS and Android applications built with React Native and Flutter.
 
 ## Industry Solutions
-- **Real Estate & Development**: MLS/IDX property search platforms and seller lead funnels. (URL: https://goexecution.com/industries/real-estate)
-- **Fashion & Apparel**: Luxury Shopify & Next.js storefronts and UGC video campaigns. (URL: https://goexecution.com/industries/fashion)
-- **Retail & Consumer Goods**: Scalable e-commerce platforms with inventory sync. (URL: https://goexecution.com/industries/retail)
-- **Hospitality & Leisure**: Direct booking engines for luxury resorts and venues. (URL: https://goexecution.com/industries/hospitality)
-- **Technology & B2B SaaS**: Next.js product websites, demo booking funnels, and technical SEO. (URL: https://goexecution.com/industries/technology)
-- **Professional Services**: High-trust corporate digital platforms for legal, financial, and consulting firms. (URL: https://goexecution.com/industries/professional-services)
-- **Health & Wellness**: HIPAA-compliant patient booking portals and local clinic search. (URL: https://goexecution.com/industries/health-wellness)
+- [Real Estate & Development](https://goexecution.com/industries/real-estate): MLS/IDX property search platforms and high-intent buyer/seller lead funnels.
+- [Fashion & Apparel](https://goexecution.com/industries/fashion): Modern e-commerce storefronts and lifestyle digital brand experiences.
+- [Retail & Consumer Goods](https://goexecution.com/industries/retail): Omnichannel storefronts with real-time inventory management.
+- [Hospitality & Leisure](https://goexecution.com/industries/hospitality): Direct booking engines and digital guest experiences for boutique hotels and resorts.
+- [Technology & B2B SaaS](https://goexecution.com/industries/technology): Next.js marketing platforms, self-serve onboarding flows, and technical SEO.
+- [Professional Services](https://goexecution.com/industries/professional-services): High-trust digital platforms for legal, accounting, and consulting firms.
+- [Health & Wellness](https://goexecution.com/industries/health-wellness): HIPAA-compliant booking systems and local clinic search optimization.
 
-## Structured Data & API Integration
-- **Schema Format**: Full Schema.org JSON-LD (`Organization`, `WebSite`, `Service`, `FAQPage`, `BreadcrumbList`)
-- **Metadata**: Comprehensive OpenGraph and Twitter card assets with canonical URL definitions.
-- **Rendering Architecture**: Static Site Generation (SSG) with instantaneous pre-rendered HTML.
+## Technical Architecture & AI Search Signals
+- **Rendering Architecture**: Server-Side Rendering (SSR) and Static Site Generation (SSG) with instantaneous HTML delivery.
+- **AI Crawler Readiness**: Full crawl access configured for `GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, and `Applebot-Extended`.
+- **Structured Data**: Connected Schema.org JSON-LD graphs linking `Organization`, `LocalBusiness`, `ProfessionalService`, `Service`, `WebSite`, `BreadcrumbList`, and `Article`.
+- **Extended Documentation**: Comprehensive LLM dataset available at https://goexecution.com/llms-full.txt.
+
+## Authoritative Research & Insights
+- [Generative Engine Optimization (GEO) 2026 Guide](https://goexecution.com/generative-engine-optimization-geo-guide/): Complete guide to ranking in Google AI Overviews, Perplexity, and ChatGPT.
+- [Why Next.js is Replacing Headless Shopify](https://goexecution.com/nextjs-replacing-headless-shopify-enterprise-ecommerce/): Architecture analysis of modern enterprise commerce platforms.
+- [The Financial Cost of Poor Core Web Vitals & INP](https://goexecution.com/cost-of-poor-core-web-vitals-inp/): Impact of load speed and interaction to next paint on B2B conversion rates.
+- [What is Technical SEO? Complete US Business Guide](https://goexecution.com/what-is-technical-seo/): Step-by-step technical crawl and indexing framework.
+- [How Long Does SEO Take for a New Website?](https://goexecution.com/how-long-does-seo-take-for-new-website/): Empirical timeline and indexing milestones for new domains.
