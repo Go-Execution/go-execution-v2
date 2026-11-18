@@ -10012,6 +10012,28 @@ body:not(.home) .ge-header,
 	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
+.ge-blog-post__content pre,
+.ge-prose pre {
+	margin: 28px 0 32px;
+	padding: 20px 22px;
+	overflow-x: auto;
+	border-radius: 14px;
+	border: 1px solid rgba(201, 168, 106, 0.28);
+	background: #091827;
+	color: #e2e8f0;
+	font-size: 14px;
+	line-height: 1.65;
+	box-shadow: 0 16px 40px rgba(9, 24, 39, 0.14);
+}
+
+.ge-blog-post__content pre code,
+.ge-prose pre code {
+	padding: 0;
+	background: transparent;
+	color: inherit;
+	font-size: inherit;
+}
+
 /* Contextual brand marks and people/process/technology media */
 .ge-media-brand-mark {
 	position: absolute;

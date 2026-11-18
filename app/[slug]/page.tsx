@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.dateModified,
-      images: post.image ? [{ url: post.image, alt: post.imageAlt ?? post.title }] : undefined,
+      images: post.image ? [{ url: post.image, width: 1200, height: 630, alt: post.imageAlt ?? post.title }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
@@ -49,8 +49,15 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const wordCount = post.contentHtml
+    .replace(/<[^>]+>/g, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  const readMinutes = Math.max(1, Math.round(wordCount / 220));
+
   const path = `/${post.slug}/`;
-  const schema: { "@context": string; "@graph": any[] } = {
+  const schema: { "@context": string; "@graph": Record<string, unknown>[] } = {
     "@context": "https://schema.org",
     "@graph": [
         buildOrganization(),
@@ -63,8 +70,10 @@ export default async function BlogPostPage({ params }: Props) {
         dateModified: post.dateModified,
         image: post.image,
         authorName: post.author?.name || "Go Execution Editorial",
+        authorRole: post.author?.role,
         authorUrl: post.author?.url || "https://goexecution.com/about/",
         reviewerName: post.reviewer?.name,
+        reviewerRole: post.reviewer?.role,
       }),
       buildWebPage({ path, title: post.title }),
       buildBreadcrumbList([
@@ -96,11 +105,34 @@ export default async function BlogPostPage({ params }: Props) {
                 </Link>
                 <span className="ge-blog-post__dot" aria-hidden="true">•</span>
                 <time dateTime={post.date}>{formatBlogDate(post.date)}</time>
+                {post.dateModified !== post.date && (
+                  <>
+                    <span className="ge-blog-post__dot" aria-hidden="true">•</span>
+                    <span>Updated <time dateTime={post.dateModified}>{formatBlogDate(post.dateModified)}</time></span>
+                  </>
+                )}
                 <span className="ge-blog-post__dot" aria-hidden="true">•</span>
-                <span>5 min read</span>
+                <span>{readMinutes} min read</span>
               </div>
               <h1 className="ge-blog-post__title">{post.title}</h1>
               <p className="ge-blog-post__lead">{post.excerpt}</p>
+              {post.author && (
+                <div className="ge-blog-post__author">
+                  <div className="ge-blog-post__author-avatar" aria-hidden="true">
+                    {post.author.avatarInitials}
+                  </div>
+                  <div>
+                    <strong>
+                      {post.author.name}
+                      {post.reviewer ? ` · Reviewed by ${post.reviewer.name}` : ""}
+                    </strong>
+                    <span>
+                      {post.author.role}
+                      {post.reviewer?.role ? ` · ${post.reviewer.role}` : ""}
+                    </span>
+                  </div>
+                </div>
+              )}
             </div>
           </header>
 

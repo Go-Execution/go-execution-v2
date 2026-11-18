@@ -213,22 +213,26 @@ export function buildArticle(opts: {
   datePublished: string;
   dateModified: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   authorName?: string;
+  authorRole?: string;
   authorUrl?: string;
   reviewerName?: string;
+  reviewerRole?: string;
 }) {
-  const author = opts.authorName
-    ? {
+  const isOrgAuthor = !opts.authorName || /\b(team|editorial|board|go execution)\b/i.test(opts.authorName);
+  const author = isOrgAuthor
+    ? { "@type": "Organization", "@id": `${site.url}/#organization` }
+    : {
         "@type": "Person",
         name: opts.authorName,
         url: opts.authorUrl || `${site.url}/about/`,
-        jobTitle: "Founder & SEO Strategist",
+        jobTitle: opts.authorRole || "Technical SEO & Web Strategist",
         worksFor: { "@id": `${site.url}/#organization` },
-        sameAs: ["https://www.linkedin.com/in/justin-goexecution/"]
-      }
-    : { "@type": "Organization", "@id": `${site.url}/#organization` };
+      };
 
-  const article: any = {
+  const article: Record<string, unknown> = {
     "@type": "Article",
     "@id": `${site.url}${opts.path}#article`,
     headline: opts.headline,
@@ -242,16 +246,23 @@ export function buildArticle(opts: {
   };
 
   if (opts.reviewerName) {
-    article.reviewedBy = {
-      "@type": "Person",
-      name: opts.reviewerName,
-    };
+    const isOrgReviewer = /\b(team|editorial|board|go execution)\b/i.test(opts.reviewerName);
+    article.reviewedBy = isOrgReviewer
+      ? { "@type": "Organization", "@id": `${site.url}/#organization` }
+      : {
+          "@type": "Person",
+          name: opts.reviewerName,
+          ...(opts.reviewerRole ? { jobTitle: opts.reviewerRole } : {}),
+          worksFor: { "@id": `${site.url}/#organization` },
+        };
   }
 
   if (opts.image) {
     article.image = {
       "@type": "ImageObject",
       url: opts.image.startsWith("http") ? opts.image : `${site.url}${opts.image}`,
+      width: opts.imageWidth ?? 1200,
+      height: opts.imageHeight ?? 630,
     };
   }
 
