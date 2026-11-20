@@ -5,8 +5,8 @@
   color: #0d1b2a;
   background:
     radial-gradient(circle at 9% 12%, rgba(201, 168, 106, 0.18), transparent 23%),
-    radial-gradient(circle at 91% 88%, rgba(49, 93, 133, 0.1), transparent 25%),
-    #f6f4ee;
+    radial-gradient(circle at 91% 88%, rgba(13, 27, 42, 0.06), transparent 25%),
+    var(--ge-light, #f2f4f7);
 }
 
 .gridPattern {
@@ -57,7 +57,7 @@
 
 .intro p {
   margin: 0;
-  color: #526273;
+  color: var(--ge-slate, #6b7280);
   font-size: 16px;
   line-height: 1.75;
 }
@@ -85,8 +85,8 @@
 .card:hover,
 .card:focus-within {
   z-index: 2;
-  border-color: rgba(229, 193, 88, 0.76);
-  box-shadow: 0 30px 80px rgba(13, 27, 42, 0.24), 0 0 0 1px rgba(229, 193, 88, 0.32);
+  border-color: rgba(201, 168, 106, 0.76);
+  box-shadow: 0 30px 80px rgba(13, 27, 42, 0.24), 0 0 0 1px rgba(201, 168, 106, 0.32);
   transform: translateY(-8px);
 }
 
@@ -94,11 +94,13 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
   color: #fff;
 }
 
 .cardLink:focus-visible {
-  outline: 3px solid #e5c158;
+  outline: 3px solid var(--ge-gold, #c9a86a);
   outline-offset: -6px;
 }
 
@@ -107,7 +109,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: #13283d;
+  background: var(--ge-navy-soft, #14283d);
 }
 
 .image {
@@ -124,7 +126,7 @@
 .shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 12, 20, 0.22), transparent 34%, rgba(4, 12, 20, 0.12));
+  background: linear-gradient(180deg, rgba(13, 27, 42, 0.22), transparent 34%, rgba(13, 27, 42, 0.12));
   pointer-events: none;
 }
 
@@ -158,13 +160,13 @@
   justify-content: center;
   width: 42px;
   color: #0d1b2a;
-  background: #e5c158;
+  background: var(--ge-gold, #c9a86a);
 }
 
 .count {
   padding: 0 14px;
   color: rgba(255, 255, 255, 0.78);
-  background: rgba(8, 20, 32, 0.58);
+  background: rgba(13, 27, 42, 0.65);
 }
 
 .content {
@@ -172,12 +174,16 @@
   align-items: flex-start;
   flex: 1;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   padding: 26px;
 }
 
 .eyebrow {
+  max-width: 100%;
   margin: 0 0 10px;
-  color: #e5c158;
+  color: var(--ge-gold, #c9a86a);
   font-size: 10px;
   font-weight: 750;
   letter-spacing: 0.14em;
@@ -186,21 +192,24 @@
 }
 
 .content h3 {
-  max-width: 620px;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   color: #fff;
-  font-size: clamp(25px, 2.25vw, 36px);
+  font-size: clamp(23px, 2.05vw, 32px);
   font-weight: 650;
-  letter-spacing: -0.045em;
-  line-height: 1.05;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  overflow-wrap: break-word;
 }
 
 .description {
   display: -webkit-box;
-  max-width: 690px;
+  width: 100%;
+  max-width: 100%;
   margin: 14px 0 0;
   overflow: hidden;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 13px;
   line-height: 1.65;
   -webkit-box-orient: vertical;
@@ -210,19 +219,23 @@
 .capabilities {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  min-width: 0;
   margin-top: 22px;
   gap: 8px;
 }
 
 .capabilities span {
+  max-width: 100%;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.8);
-  background: rgba(7, 18, 29, 0.52);
+  background: rgba(13, 27, 42, 0.55);
   backdrop-filter: blur(10px);
   font-size: 10px;
   font-weight: 650;
+  line-height: 1.35;
 }
 
 .cardFooter {
@@ -230,6 +243,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  min-width: 0;
   margin-top: auto;
   padding-top: 17px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -237,6 +251,8 @@
 }
 
 .cardFooter span {
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.82);
   font-size: 10px;
@@ -256,7 +272,7 @@
   height: 38px;
   border-radius: 50%;
   color: #0d1b2a;
-  background: #e5c158;
+  background: var(--ge-gold, #c9a86a);
   font-size: 17px;
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease;
 }
@@ -289,14 +305,14 @@
 }
 
 .outcomes > div span {
-  color: #b08a36;
+  color: var(--ge-gold, #c9a86a);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.1em;
 }
 
 .outcomes > div strong {
-  color: #26394c;
+  color: var(--ge-navy, #0d1b2a);
   font-size: 12px;
   line-height: 1.45;
 }
@@ -318,11 +334,11 @@
 .outcomes > a:hover,
 .outcomes > a:focus-visible {
   color: #0d1b2a;
-  background: #e5c158;
+  background: var(--ge-gold, #c9a86a);
 }
 
 .outcomes > a:focus-visible {
-  outline: 3px solid #315d85;
+  outline: 3px solid var(--ge-gold, #c9a86a);
   outline-offset: -5px;
 }
 

@@ -31,11 +31,11 @@ export default function LeaveReviewPage() {
   return (
     <>
       <JsonLd data={schema} />
-      <main className="ge-leave-review-page" style={{ padding: "120px 0", background: "#f8fafc", minHeight: "100vh" }}>
+      <main className="ge-leave-review-page" style={{ padding: "120px 0", background: "#f2f4f7", minHeight: "100vh" }}>
         <div className="ge-container" style={{ maxWidth: "600px" }}>
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <h1 style={{ fontSize: "36px", color: "#0d1b2a", marginBottom: "16px" }}>Share Your Experience</h1>
-            <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.6" }}>
+            <p style={{ color: "#6b7280", fontSize: "16px", lineHeight: "1.6" }}>
               Your feedback helps us improve and helps other businesses make informed decisions.
             </p>
           </div>

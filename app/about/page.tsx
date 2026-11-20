@@ -72,7 +72,7 @@ export default function About() {
         {/* --- LIGHT MODERN AGENCY HERO --- */}
         <section className="ge-hero ge-hero--inner" style={{ background: "#ffffff", color: "#0d1b2a", paddingTop: 160, paddingBottom: 80 }}>
           <div className="ge-container">
-            <div className="ge-hero__badge-wrap" style={{ background: "#f8fafc", border: "1px solid rgba(229, 193, 88, 0.4)" }}>
+            <div className="ge-hero__badge-wrap" style={{ background: "#f2f4f7", border: "1px solid rgba(201, 168, 106, 0.4)" }}>
               <span className="ge-eyebrow" style={{ color: "#0d1b2a", margin: 0 }}>● DIGITAL GROWTH &amp; WEB ENGINEERING AGENCY</span>
             </div>
 
@@ -81,27 +81,27 @@ export default function About() {
               <span className="ge-title-accent">For Ambitious Brands</span>
             </h1>
 
-            <p className="ge-hero__copy" style={{ color: "#475569", maxWidth: 720 }}>
+            <p className="ge-hero__copy" style={{ color: "#6b7280", maxWidth: 720 }}>
               Go Execution is an elite multidisciplinary digital agency uniting custom Next.js web engineering, technical SEO, performance advertising, and luxury brand design for businesses that expect progress.
             </p>
 
             {/* Stat Pills Grid */}
             <div className="ge-hero-stats" style={{ marginTop: 36, marginBottom: 40 }}>
-              <div className="ge-hero-stat-pill" style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
+              <div className="ge-hero-stat-pill" style={{ background: "#f2f4f7", border: "1px solid rgba(13, 27, 42, 0.14)" }}>
                 <strong style={{ color: "#0d1b2a" }}>250+ Projects</strong>
-                <span style={{ color: "#64748b" }}>Delivered for Brands</span>
+                <span style={{ color: "#6b7280" }}>Delivered for Brands</span>
               </div>
-              <div className="ge-hero-stat-pill" style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
+              <div className="ge-hero-stat-pill" style={{ background: "#f2f4f7", border: "1px solid rgba(13, 27, 42, 0.14)" }}>
                 <strong style={{ color: "#0d1b2a" }}>Sub-1s Speeds</strong>
-                <span style={{ color: "#64748b" }}>Next.js 16 Standard</span>
+                <span style={{ color: "#6b7280" }}>Next.js 16 Standard</span>
               </div>
-              <div className="ge-hero-stat-pill" style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
+              <div className="ge-hero-stat-pill" style={{ background: "#f2f4f7", border: "1px solid rgba(13, 27, 42, 0.14)" }}>
                 <strong style={{ color: "#0d1b2a" }}>3.8x Avg ROAS</strong>
-                <span style={{ color: "#64748b" }}>Performance Marketing</span>
+                <span style={{ color: "#6b7280" }}>Performance Marketing</span>
               </div>
-              <div className="ge-hero-stat-pill" style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
+              <div className="ge-hero-stat-pill" style={{ background: "#f2f4f7", border: "1px solid rgba(13, 27, 42, 0.14)" }}>
                 <strong style={{ color: "#0d1b2a" }}>Dallas, Texas</strong>
-                <span style={{ color: "#64748b" }}>Agency Headquarters</span>
+                <span style={{ color: "#6b7280" }}>Agency Headquarters</span>
               </div>
             </div>
 
@@ -134,37 +134,37 @@ export default function About() {
         </section>
 
         {/* --- OUR STORY & PHILOSOPHY (LIGHT BENTO SPLIT) --- */}
-        <section id="our-story" className="ge-section" style={{ background: "#f8fafc", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
+        <section id="our-story" className="ge-section" style={{ background: "#f2f4f7", borderTop: "1px solid rgba(13, 27, 42, 0.14)", borderBottom: "1px solid rgba(13, 27, 42, 0.14)" }}>
           <div className="ge-container">
             <div className="ge-section-heading ge-section-heading--wide" style={{ marginBottom: 44 }}>
               <div>
                 <p className="ge-eyebrow">Our Agency Story</p>
                 <h2>Built for Businesses That Expect Revenue Growth</h2>
               </div>
-              <p style={{ color: "#475569" }}>
+              <p style={{ color: "#6b7280" }}>
                 Go Execution was founded on a simple realization: most businesses are let down by agencies that deliver either pretty designs with slow code, or technical code with zero conversion psychology.
               </p>
             </div>
 
             <div className="ge-grid ge-grid--2col ge-split-challenge-grid">
               {/* Mission Statement */}
-              <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
+              <div style={{ background: "#ffffff", border: "1px solid rgba(13, 27, 42, 0.14)", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
                 <div style={{ marginBottom: 20 }}>
-                  <span style={{ background: "#f8fafc", border: "1px solid rgba(229, 193, 88, 0.5)", color: "#0d1b2a", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Our Point of View</span>
+                  <span style={{ background: "#f2f4f7", border: "1px solid rgba(201, 168, 106, 0.5)", color: "#0d1b2a", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Our Point of View</span>
                   <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#0d1b2a", marginTop: 14, marginBottom: 12 }}>Creative Engineering With Commercial Purpose</h3>
                 </div>
-                <p style={{ color: "#334155", lineHeight: 1.7, fontSize: "1rem", marginBottom: 16 }}>
+                <p style={{ color: "#0d1b2a", lineHeight: 1.7, fontSize: "1rem", marginBottom: 16 }}>
                   We bring senior designers, full-stack developers, search strategists, and performance marketers together under one disciplined execution process.
                 </p>
-                <p style={{ color: "#64748b", lineHeight: 1.65, fontSize: "0.95rem" }}>
+                <p style={{ color: "#6b7280", lineHeight: 1.65, fontSize: "0.95rem" }}>
                   We value thoughtful strategy, transparent communication, and clean follow-through. That means zero code bloat, clear project ownership, and platforms designed to outrank competitors in the real world.
                 </p>
               </div>
 
               {/* Agency Guarantees */}
-              <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
+              <div style={{ background: "#ffffff", border: "1px solid rgba(13, 27, 42, 0.14)", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
                 <div style={{ marginBottom: 20 }}>
-                  <span style={{ background: "rgba(229, 193, 88, 0.12)", color: "#b8860b", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>The Go Execution Standard</span>
+                  <span style={{ background: "rgba(201, 168, 106, 0.16)", color: "#0d1b2a", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>The Go Execution Standard</span>
                   <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#0d1b2a", marginTop: 14, marginBottom: 12 }}>Our Core Commitments</h3>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -175,10 +175,10 @@ export default function About() {
                     ["Direct Senior Lead Accessibility", "Direct communication with senior engineers and strategists."],
                   ].map(([title, desc]) => (
                     <li key={title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                      <span style={{ color: "#d4af37", fontWeight: 700, fontSize: "1.1rem" }}>✓</span>
+                      <span style={{ color: "#c9a86a", fontWeight: 700, fontSize: "1.1rem" }}>✓</span>
                       <div>
                         <strong style={{ color: "#0d1b2a", fontSize: "0.98rem", display: "block" }}>{title}</strong>
-                        <p style={{ color: "#64748b", fontSize: "0.88rem", margin: "2px 0 0" }}>{desc}</p>
+                        <p style={{ color: "#6b7280", fontSize: "0.88rem", margin: "2px 0 0" }}>{desc}</p>
                       </div>
                     </li>
                   ))}
@@ -198,20 +198,20 @@ export default function About() {
                   Our 4 Core <span className="ge-title-accent">Operating Principles</span>
                 </h2>
               </div>
-              <p style={{ color: "#64748b" }}>
+              <p style={{ color: "#6b7280" }}>
                 The foundational values that guide every line of code, design system, and marketing campaign we launch.
               </p>
             </div>
 
             <div className="ge-grid ge-grid--4col">
               {principles.map((item) => (
-                <article key={item.num} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 20, padding: 28, display: "flex", flexDirection: "column", gap: 12 }}>
+                <article key={item.num} style={{ background: "#f2f4f7", border: "1px solid rgba(13, 27, 42, 0.14)", borderRadius: 20, padding: 28, display: "flex", flexDirection: "column", gap: 12 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <span style={{ fontSize: "1.5rem", fontWeight: 800, color: "#d4af37", fontFamily: "var(--ge-font-heading)" }}>{item.num}</span>
-                    <span style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", color: "#64748b", background: "#ffffff", padding: "4px 10px", borderRadius: 12, border: "1px solid #e2e8f0" }}>{item.eyebrow}</span>
+                    <span style={{ fontSize: "1.5rem", fontWeight: 800, color: "#c9a86a", fontFamily: "var(--ge-font-heading)" }}>{item.num}</span>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", color: "#6b7280", background: "#ffffff", padding: "4px 10px", borderRadius: 12, border: "1px solid rgba(13, 27, 42, 0.14)" }}>{item.eyebrow}</span>
                   </div>
                   <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "#0d1b2a", margin: "4px 0" }}>{item.title}</h3>
-                  <p style={{ fontSize: "0.9rem", color: "#475569", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
+                  <p style={{ fontSize: "0.9rem", color: "#6b7280", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
                 </article>
               ))}
             </div>
@@ -219,44 +219,44 @@ export default function About() {
         </section>
 
         {/* --- HEADQUARTERS & CAPABILITIES SHOWCASE --- */}
-        <section className="ge-section" style={{ background: "#f8fafc", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
+        <section className="ge-section" style={{ background: "#f2f4f7", borderTop: "1px solid rgba(13, 27, 42, 0.14)", borderBottom: "1px solid rgba(13, 27, 42, 0.14)" }}>
           <div className="ge-container">
             <div className="ge-section-heading ge-section-heading--wide" style={{ marginBottom: 44 }}>
               <div>
                 <p className="ge-eyebrow">Agency Infrastructure</p>
                 <h2 style={{ color: "#0d1b2a" }}>Dallas, Texas Headquarters &amp; Execution Powerhouse</h2>
               </div>
-              <p style={{ color: "#475569" }}>
+              <p style={{ color: "#6b7280" }}>
                 Strategically headquartered in Dallas, Texas, we serve clients across North America with responsive communication and disciplined project delivery.
               </p>
             </div>
 
             <div className="ge-grid ge-grid--2col ge-split-challenge-grid">
               {/* HQ Details Card */}
-              <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
+              <div style={{ background: "#ffffff", border: "1px solid rgba(13, 27, 42, 0.14)", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
                 <div style={{ marginBottom: 20 }}>
-                  <span style={{ background: "rgba(229, 193, 88, 0.12)", color: "#b8860b", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Dallas Headquarters</span>
+                  <span style={{ background: "rgba(201, 168, 106, 0.16)", color: "#0d1b2a", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Dallas Headquarters</span>
                   <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#0d1b2a", marginTop: 14, marginBottom: 12 }}>Office &amp; Contact Details</h3>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 14, color: "#475569", fontSize: "0.95rem" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 14, color: "#6b7280", fontSize: "0.95rem" }}>
                   <p>
                     <strong style={{ color: "#0d1b2a" }}>📍 Address:</strong><br />
                     13345 N Central Expy, Suite#203<br />
                     Dallas, Texas 75243, United States
                   </p>
                   <p>
-                    <strong style={{ color: "#0d1b2a" }}>📞 Phone:</strong> <a href={`tel:${site.phone.replace(/[^\d+]/g, '')}`} style={{ color: "#b8860b", fontWeight: 600 }}>{site.phone}</a> / <a href="https://wa.me/17738653770" target="_blank" rel="noreferrer" style={{ color: "#b8860b", fontWeight: 600 }}>+1 (773) 865-3770 (WhatsApp)</a>
+                    <strong style={{ color: "#0d1b2a" }}>📞 Phone:</strong> <a href={`tel:${site.phone.replace(/[^\d+]/g, '')}`} style={{ color: "#0d1b2a", textDecoration: "underline", textDecorationColor: "#c9a86a", textUnderlineOffset: "3px", fontWeight: 600 }}>{site.phone}</a> / <a href="https://wa.me/17738653770" target="_blank" rel="noreferrer" style={{ color: "#0d1b2a", textDecoration: "underline", textDecorationColor: "#c9a86a", textUnderlineOffset: "3px", fontWeight: 600 }}>+1 (773) 865-3770 (WhatsApp)</a>
                   </p>
                   <p>
-                    <strong style={{ color: "#0d1b2a" }}>📧 Email:</strong> <a href={`mailto:${site.email}`} style={{ color: "#b8860b", fontWeight: 600 }}>{site.displayEmail || 'info@goexecution.com'}</a>
+                    <strong style={{ color: "#0d1b2a" }}>📧 Email:</strong> <a href={`mailto:${site.email}`} style={{ color: "#0d1b2a", textDecoration: "underline", textDecorationColor: "#c9a86a", textUnderlineOffset: "3px", fontWeight: 600 }}>{site.displayEmail || 'info@goexecution.com'}</a>
                   </p>
                 </div>
               </div>
 
               {/* Capabilities Stack */}
-              <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
+              <div style={{ background: "#ffffff", border: "1px solid rgba(13, 27, 42, 0.14)", borderRadius: 24, padding: 36, boxShadow: "0 12px 36px rgba(13, 27, 42, 0.04)" }}>
                 <div style={{ marginBottom: 20 }}>
-                  <span style={{ background: "rgba(229, 193, 88, 0.12)", color: "#b8860b", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Full-Stack Spectrum</span>
+                  <span style={{ background: "rgba(201, 168, 106, 0.16)", color: "#0d1b2a", fontSize: "0.78rem", fontWeight: 700, padding: "4px 14px", borderRadius: 20 }}>Full-Stack Spectrum</span>
                   <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#0d1b2a", marginTop: 14, marginBottom: 12 }}>Our Multidisciplinary Expertise</h3>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -267,10 +267,10 @@ export default function About() {
                     ["Luxury Brand Design & Motion", "Brand identity systems, UI/UX design, and 2D/3D explainer videos."],
                   ].map(([title, desc]) => (
                     <li key={title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                      <span style={{ color: "#d4af37", fontWeight: 700, fontSize: "1.1rem" }}>⚡</span>
+                      <span style={{ color: "#c9a86a", fontWeight: 700, fontSize: "1.1rem" }}>⚡</span>
                       <div>
                         <strong style={{ color: "#0d1b2a", fontSize: "0.98rem", display: "block" }}>{title}</strong>
-                        <p style={{ color: "#64748b", fontSize: "0.88rem", margin: "2px 0 0" }}>{desc}</p>
+                        <p style={{ color: "#6b7280", fontSize: "0.88rem", margin: "2px 0 0" }}>{desc}</p>
                       </div>
                     </li>
                   ))}

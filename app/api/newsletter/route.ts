@@ -29,7 +29,7 @@ export async function POST(request: Request) {
   const rawPass = process.env.SMTP_PASS || process.env.HOSTINGER_SMTP_PASS || process.env.GMAIL_APP_PASSWORD;
   const smtpPass = rawPass ? rawPass.trim().replace(/^["']|["']$/g, "") : "";
 
-  const html = `<div style="font-family:sans-serif;color:#333;">
+  const html = `<div style="font-family:'Poppins',sans-serif;color:#0d1b2a;">
     <h2>New Newsletter Signup</h2>
     <p>A new user has subscribed to the Go Execution newsletter:</p>
     <p><strong>Email:</strong> ${email}</p>

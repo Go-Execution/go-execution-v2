@@ -253,7 +253,7 @@ export async function Homepage() {
               <h2 style={{ color: "#0d1b2a" }}>Engineered for High-Stakes Industries</h2>
             </div>
             <div>
-              <p style={{ color: "#475569", marginBottom: 18 }}>
+              <p style={{ color: "#6b7280", marginBottom: 18 }}>
                 Every vertical has unique compliance constraints, buyer cycles, and conversion bottlenecks. We architect custom digital growth systems tailored to your specific commercial reality.
               </p>
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginTop: "1.5rem" }}>
@@ -402,7 +402,7 @@ export async function Homepage() {
           <div>
             <p className="ge-eyebrow">Transparent Investment</p>
             <h2>Predictable Pricing. Zero Surprise Retainers.</h2>
-            <p style={{ marginTop: 12, color: "#cbd5e1" }}>Choose a dedicated growth package engineered for your stage of business, or contact our team for a tailored enterprise build. Fixed scopes, clear deliverables, no hidden hourly fees.</p>
+            <p style={{ marginTop: 12, color: "#f2f4f7" }}>Choose a dedicated growth package engineered for your stage of business, or contact our team for a tailored enterprise build. Fixed scopes, clear deliverables, no hidden hourly fees.</p>
           </div>
         </div>
         <PricingGrid groups={content.pricing} />

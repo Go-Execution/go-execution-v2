@@ -9,14 +9,14 @@ export default async function Image() {
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #0b1c2c 0%, #1a3a52 100%)",
+          background: "linear-gradient(135deg, #0d1b2a 0%, #14283d 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "system-ui, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           position: "relative",
         }}
       >
@@ -43,7 +43,7 @@ export default async function Image() {
             style={{
               fontSize: 32,
               fontWeight: 400,
-              color: "#e0e7ef",
+              color: "#f2f4f7",
               textAlign: "center",
               maxWidth: 900,
             }}
@@ -54,7 +54,7 @@ export default async function Image() {
             style={{
               marginTop: 32,
               fontSize: 24,
-              color: "#d4af37",
+              color: "#c9a86a",
               fontWeight: 600,
             }}
           >

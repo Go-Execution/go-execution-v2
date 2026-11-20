@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Go Execution helps businesses grow with web design, SEO, digital marketing, branding, mobile apps, and video animation focused on measurable results.",
     start_url: "/",
     display: "standalone",
-    background_color: "#0b1c2c",
-    theme_color: "#0b1c2c",
+    background_color: "#0d1b2a",
+    theme_color: "#0d1b2a",
     icons: [
       {
         src: "/icon.png",

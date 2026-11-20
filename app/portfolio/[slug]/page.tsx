@@ -172,7 +172,7 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
               padding: "6px 16px", 
               background: "rgba(255,255,255,0.1)", 
               borderRadius: "99px", 
-              color: "#b8860b", 
+              color: "#c9a86a", 
               fontWeight: 600, 
               fontSize: "14px", 
               marginBottom: "24px" 
@@ -193,7 +193,7 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
           <div className="ge-container">
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
               
-              <div style={{ borderRadius: "24px", overflow: "hidden", marginBottom: "60px", boxShadow: "0 20px 40px rgba(0,0,0,0.1)", background: "#f1f5f9" }}>
+              <div style={{ borderRadius: "24px", overflow: "hidden", marginBottom: "60px", boxShadow: "0 20px 40px rgba(13,27,42,0.1)", background: "#f2f4f7" }}>
                 {image.endsWith(".mp4") || image.endsWith(".webm") ? (
                   <video
                     src={image}
@@ -217,21 +217,21 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
               <div className="ge-grid ge-grid--2col" style={{ gap: "60px", alignItems: "start" }}>
                 <div>
                   <h2 style={{ fontSize: "32px", color: "#0d1b2a", marginBottom: "24px" }}>The Challenge</h2>
-                  <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.8", marginBottom: "20px" }}>
+                  <p style={{ color: "#6b7280", fontSize: "16px", lineHeight: "1.8", marginBottom: "20px" }}>
                     {content.challenge1}
                   </p>
-                  <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.8" }}>
+                  <p style={{ color: "#6b7280", fontSize: "16px", lineHeight: "1.8" }}>
                     {content.challenge2}
                   </p>
                 </div>
 
-                <div style={{ background: "#f8fafc", padding: "40px", borderRadius: "16px" }}>
+                <div style={{ background: "#f2f4f7", padding: "40px", borderRadius: "16px" }}>
                   <h3 style={{ fontSize: "24px", color: "#0d1b2a", marginBottom: "24px" }}>Strategic Execution</h3>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     {content.solutionItems.map((item, idx) => (
                       <li key={idx} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                        <span style={{ color: "#b8860b", fontSize: "18px", marginTop: "2px" }}>✓</span>
-                        <span style={{ color: "#475569", fontSize: "16px", lineHeight: "1.6" }}>{item}</span>
+                        <span style={{ color: "#c9a86a", fontSize: "18px", marginTop: "2px" }}>✓</span>
+                        <span style={{ color: "#6b7280", fontSize: "16px", lineHeight: "1.6" }}>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -243,7 +243,7 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
         </section>
 
         {/* RELATED PROJECTS */}
-        <section className="ge-section" style={{ padding: "80px 0", background: "#f8fafc", borderTop: "1px solid #e2e8f0" }}>
+        <section className="ge-section" style={{ padding: "80px 0", background: "#f2f4f7", borderTop: "1px solid rgba(13, 27, 42, 0.14)" }}>
           <div className="ge-container">
             <h2 style={{ fontSize: "28px", color: "#0d1b2a", marginBottom: "40px", textAlign: "center" }}>Related Projects</h2>
             <div className="ge-grid ge-grid--3col" style={{ gap: "30px" }}>
@@ -253,8 +253,8 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
                 const isPVideo = pImage.endsWith(".mp4") || pImage.endsWith(".webm");
                 
                 return (
-                  <Link key={idx} href={`/portfolio/${pSlug}/`} style={{ display: "block", background: "#fff", borderRadius: "16px", overflow: "hidden", textDecoration: "none", color: "inherit", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <div style={{ aspectRatio: "16/9", background: "#f1f5f9", overflow: "hidden" }}>
+                  <Link key={idx} href={`/portfolio/${pSlug}/`} style={{ display: "block", background: "#fff", borderRadius: "16px", overflow: "hidden", textDecoration: "none", color: "inherit", boxShadow: "0 4px 15px rgba(13,27,42,0.05)" }}>
+                    <div style={{ aspectRatio: "16/9", background: "#f2f4f7", overflow: "hidden" }}>
                       {isPVideo ? (
                         <video src={pImage} autoPlay loop muted playsInline style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                       ) : (
@@ -262,7 +262,7 @@ export default async function PortfolioCaseStudyPage({ params }: { params: Promi
                       )}
                     </div>
                     <div style={{ padding: "20px" }}>
-                      <div style={{ fontSize: "12px", color: "#b8860b", fontWeight: 600, marginBottom: "8px", textTransform: "uppercase" }}>{p.category}</div>
+                      <div style={{ fontSize: "12px", color: "#c9a86a", fontWeight: 600, marginBottom: "8px", textTransform: "uppercase" }}>{p.category}</div>
                       <h3 style={{ fontSize: "18px", color: "#0d1b2a", margin: 0 }}>{p.title}</h3>
                     </div>
                   </Link>
