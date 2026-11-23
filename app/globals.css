@@ -2307,13 +2307,17 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 }
 
 .ge-package-panel {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 22px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	gap: 36px 22px;
 }
 
 .ge-package {
 	display: flex;
+	flex: 0 1 calc((100% - 44px) / 3);
+	min-width: 0;
 	flex-direction: column;
 	min-height: 540px;
 	padding: clamp(30px, 3.5vw, 45px);
@@ -2653,9 +2657,12 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 	}
 
 	.ge-capability-grid,
-	.ge-portfolio-grid,
-	.ge-package-panel {
+	.ge-portfolio-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.ge-package {
+		flex: 0 1 calc((100% - 22px) / 2);
 	}
 }
 
@@ -2795,9 +2802,13 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 	.ge-values__grid,
 	.ge-capability-grid,
 	.ge-process__grid,
-	.ge-portfolio-grid,
-	.ge-package-panel {
+	.ge-portfolio-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.ge-package {
+		flex: 1 1 100%;
+		width: 100%;
 	}
 
 	.ge-service-row {
@@ -11238,43 +11249,43 @@ body:not(.home) .ge-header,
 	border-color: #c9a86a !important;
 	box-shadow: 0 4px 14px rgba(201, 168, 106, 0.35) !important;
 }
-.ge-pricing .ge-package {
+:is(.ge-pricing, .ge-pricing-page) .ge-package {
 	background: #ffffff !important;
 	border: 1px solid rgba(13, 27, 42, 0.12) !important;
 	box-shadow: 0 10px 30px rgba(13, 27, 42, 0.06) !important;
 }
-.ge-pricing .ge-package > div p {
+:is(.ge-pricing, .ge-pricing-page) .ge-package > div p {
 	color: #c9a86a !important;
 }
-.ge-pricing .ge-package h2 {
+:is(.ge-pricing, .ge-pricing-page) .ge-package h2 {
 	color: #0d1b2a !important;
 }
-.ge-pricing .ge-package > strong {
+:is(.ge-pricing, .ge-pricing-page) .ge-package > strong {
 	color: #0d1b2a !important;
 }
-.ge-pricing .ge-package__striked {
+:is(.ge-pricing, .ge-pricing-page) .ge-package__striked {
 	color: #6b7280 !important;
 }
-.ge-pricing .ge-package-features-toggle {
+:is(.ge-pricing, .ge-pricing-page) .ge-package-features-toggle {
 	background: #f2f4f7 !important;
 	border-color: rgba(13, 27, 42, 0.12) !important;
 	color: #0d1b2a !important;
 }
-.ge-pricing .ge-package-features-toggle:hover,
-.ge-pricing .ge-package-features-toggle[aria-expanded="true"] {
+:is(.ge-pricing, .ge-pricing-page) .ge-package-features-toggle:hover,
+:is(.ge-pricing, .ge-pricing-page) .ge-package-features-toggle[aria-expanded="true"] {
 	background: rgba(201, 168, 106, 0.16) !important;
 	border-color: rgba(201, 168, 106, 0.4) !important;
 }
-.ge-pricing .ge-package-features-list {
+:is(.ge-pricing, .ge-pricing-page) .ge-package-features-list {
 	background: #f2f4f7 !important;
 	border-color: rgba(13, 27, 42, 0.08) !important;
 }
-.ge-pricing .ge-package li {
+:is(.ge-pricing, .ge-pricing-page) .ge-package li {
 	color: #0d1b2a !important;
 }
 
-/* Featured / Best Value Card in .ge-pricing (Deep Navy Card with Gold Button) */
-.ge-pricing .ge-package.ge-package--featured {
+/* Featured / Best Value Card in .ge-pricing & .ge-pricing-page (Deep Navy Card with Gold Button) */
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured {
 	position: relative !important;
 	background: linear-gradient(155deg, #0d1b2a 0%, #0d1b2a 65%, #0d1b2a 100%) !important;
 	border: 1.5px solid rgba(201, 168, 106, 0.5) !important;
@@ -11284,7 +11295,7 @@ body:not(.home) .ge-header,
 	z-index: 2;
 }
 
-.ge-pricing .ge-package.ge-package--featured::before {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured::before {
 	position: absolute;
 	top: -14px;
 	left: 50%;
@@ -11302,63 +11313,67 @@ body:not(.home) .ge-header,
 	z-index: 3;
 }
 
-.ge-pricing .ge-package.ge-package--featured > div p {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured > div p {
 	color: #c9a86a !important;
 	letter-spacing: 0.15em;
 }
 
-.ge-pricing .ge-package.ge-package--featured h2 {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured h2 {
 	color: #ffffff !important;
 	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.ge-pricing .ge-package.ge-package--featured > strong {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured > strong {
 	color: #ffffff !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-package__striked {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package__striked {
 	color: rgba(255, 255, 255, 0.65) !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-package__striked span {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package__striked span {
 	color: #f87171 !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-package-features-toggle {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package-features-toggle {
 	background: rgba(255, 255, 255, 0.08) !important;
 	border-color: rgba(201, 168, 106, 0.3) !important;
 	color: #ffffff !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-package-features-toggle:hover,
-.ge-pricing .ge-package.ge-package--featured .ge-package-features-toggle[aria-expanded="true"] {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package-features-toggle:hover,
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package-features-toggle[aria-expanded="true"] {
 	background: rgba(201, 168, 106, 0.2) !important;
 	border-color: #c9a86a !important;
 	color: #ffffff !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-package-features-list {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-package-features-list {
 	background: rgba(13, 27, 42, 0.7) !important;
 	border-color: rgba(201, 168, 106, 0.2) !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured li {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured li {
 	color: rgba(255, 255, 255, 0.88) !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured li::before {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured li::before {
 	color: #c9a86a !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-button--gold {
-	background: var(--ge-gold) !important;
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-button--gold,
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-button--outline {
+	background: var(--ge-gold, #c9a86a) !important;
 	color: #0d1b2a !important;
 	border-color: transparent !important;
 	font-weight: 700 !important;
 	box-shadow: 0 8px 24px rgba(201, 168, 106, 0.45) !important;
 }
 
-.ge-pricing .ge-package.ge-package--featured .ge-button--gold:hover {
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-button--gold:hover,
+:is(.ge-pricing, .ge-pricing-page) .ge-package.ge-package--featured .ge-button--outline:hover {
+	background: var(--ge-gold-light, #ead7ad) !important;
+	color: #0d1b2a !important;
 	transform: translateY(-2px) !important;
 	box-shadow: 0 12px 30px rgba(201, 168, 106, 0.6) !important;
 }
@@ -11393,18 +11408,18 @@ body:not(.home) .ge-header,
 .ge-faq-accordion .ge-accordion__panel p {
 	color: rgba(255, 255, 255, 0.72) !important;
 }
-.ge-pricing .ge-package .ge-button--outline {
+:is(.ge-pricing, .ge-pricing-page) .ge-package:not(.ge-package--featured) .ge-button--outline {
 	background: #ffffff !important;
 	color: var(--ge-navy, #0d1b2a) !important;
-	border-color: #ffffff !important;
+	border: 1.5px solid rgba(13, 27, 42, 0.22) !important;
 	font-weight: 700 !important;
-	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+	box-shadow: 0 4px 14px rgba(13, 27, 42, 0.06) !important;
 }
-.ge-pricing .ge-package .ge-button--outline:hover {
-	background: var(--ge-gold-light, #ead7ad) !important;
-	color: var(--ge-navy, #0d1b2a) !important;
-	border-color: var(--ge-gold-light, #ead7ad) !important;
-	box-shadow: 0 8px 25px rgba(201, 168, 106, 0.3) !important;
+:is(.ge-pricing, .ge-pricing-page) .ge-package:not(.ge-package--featured) .ge-button--outline:hover {
+	background: var(--ge-navy, #0d1b2a) !important;
+	color: #ffffff !important;
+	border-color: var(--ge-navy, #0d1b2a) !important;
+	box-shadow: 0 8px 25px rgba(13, 27, 42, 0.2) !important;
 }
 
 /* --- High-contrast Hero Text Contrast & Scrim Protection --- */

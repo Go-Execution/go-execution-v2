@@ -339,6 +339,48 @@
           "5 Stock Photos",
           "3 Unique Banner Design"
         ]
+      },
+      {
+        "name": "CORPORATE WEBSITE PACKAGE",
+        "price": "$2599.00",
+        "striked": "$5,198",
+        "benefits": [
+          "Unlimited Pages Website Design",
+          "Custom Made, Interactive, Dynamic & High End Design",
+          "Customized WordPress & PHP Development",
+          "Interactive Sliding Banners",
+          "Up to 15 Custom Made Banner Designs",
+          "15 Stock Images",
+          "Unlimited Revisions",
+          "Special Hover Effects",
+          "Content Management System",
+          "Custom Dynamic Forms (Optional)",
+          "Signup Area (For Newsletters, Offers etc.)",
+          "Search Bar",
+          "Live Feeds of Social Networks integration (Optional)",
+          "Mobile Responsive",
+          "Up to 15 Professional Email ID's"
+        ]
+      },
+      {
+        "name": "ENTERPRISE PLUS WEBSITE PACKAGE",
+        "price": "$4,599",
+        "striked": "$9,198",
+        "benefits": [
+          "Custom designed Homepage (6x concepts)",
+          "20 Custom designed Inner pages",
+          "Custom Made, Interactive, Dynamic & User Friendly Design",
+          "Custom WordPress/PHP Development",
+          "Customized CMS Integration",
+          "Cross platform (Desktop, iPhone, Android, etc) responsive compatibility",
+          "Striking Hover Effects",
+          "15 Premium Stock Photos",
+          "10 Custom Banner Designs",
+          "2 Landing Page Designs",
+          "Custom Dynamic Forms",
+          "Online Reservation/ Appointment/ Scheduling Tool",
+          "Online Payment Integration"
+        ]
       }
     ],
     "E-Commerce": [
