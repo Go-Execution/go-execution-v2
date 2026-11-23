@@ -174,15 +174,7 @@ export function PricingGrid({ groups }: { groups: Record<string, Package[]> }) {
   const [active, setActive] = useState(names[0]);
   const [openFeatures, setOpenFeatures] = useState<string | null>(null);
   const packages = groups[active] ?? [];
-  const questionnaire = (() => {
-    if (["Website Design", "E-Commerce", "Shopify", "Website Maintenance", "Combo"].includes(active)) {
-      return { href: "/web-questionnaire/", label: "Start Website Questionnaire" };
-    }
-    if (["Logo", "Branding"].includes(active)) {
-      return { href: "/logo-questionnaire/", label: "Start Logo Questionnaire" };
-    }
-    return { href: "/contact/", label: "Book a Free Consultation" };
-  })();
+  const pricingCta = { href: "/contact/", label: "Book a Free Consultation" };
   const tabsRef = useRef<HTMLDivElement>(null);
   const isInteractingRef = useRef(false);
 
@@ -278,9 +270,9 @@ export function PricingGrid({ groups }: { groups: Record<string, Package[]> }) {
               </ul>
               <Link
                 className={`ge-button ${isFeatured ? "ge-button--gold" : "ge-button--outline"}`}
-                href={questionnaire.href}
+                href={pricingCta.href}
               >
-                {questionnaire.label}
+                {pricingCta.label}
               </Link>
             </article>
           );
