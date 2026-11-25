@@ -2338,9 +2338,9 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 .ge-package h2 {
 	margin: 0;
 	color: var(--ge-navy);
-	font-size: 29px;
+	font-size: clamp(22px, 1.9vw, 26px);
 	font-weight: 600;
-	line-height: 1.2;
+	line-height: 1.24;
 }
 
 .ge-package>strong {
@@ -2348,6 +2348,10 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 	color: var(--ge-navy);
 	font-size: 37px;
 	font-weight: 600;
+}
+
+.ge-package>strong + .ge-package-features-toggle + .ge-package-features-list {
+	margin-top: 20px;
 }
 
 .ge-package__striked {
@@ -2365,13 +2369,14 @@ body.ge-loaded .ge-hero-reveal:nth-child(4) {
 
 .ge-package ul {
 	display: grid;
-	margin: 0 0 38px;
-	padding: 0 12px 0 0;
-	gap: 5px;
+	margin: 0 0 32px;
+	padding: 14px 14px 14px 14px;
+	border-radius: 12px;
+	gap: 7px;
 	list-style: none;
 	color: var(--ge-slate);
 	font-size: 13px;
-	max-height: 260px;
+	max-height: 270px;
 	overflow-y: auto;
 	scrollbar-width: thin;
 	scrollbar-color: #c9a86a rgba(13, 27, 42, 0.12);
