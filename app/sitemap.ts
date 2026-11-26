@@ -1,12 +1,10 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-posts";
 import { industries } from "@/lib/industries";
+import { portfolioSlug } from "@/lib/portfolio-case-studies";
 import { site } from "@/lib/seo/site";
 import { allServiceCategories, allSubServices } from "@/lib/services";
 import wpContent from "@/lib/wp-content.json";
-
-const slugify = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
 
 const staticPages = [
   "/",
@@ -35,7 +33,9 @@ const industryPages = Object.keys(industries).map(
   (slug) => `/industries/${slug}/`
 );
 
-const portfolioPages = wpContent.portfolio.map((p) => `/portfolio/${slugify(p.title)}/`);
+const portfolioPages = wpContent.portfolio.map(
+  (p) => `/portfolio/${portfolioSlug(p.title)}/`
+);
 
 const blogCategoryPages = Array.from(
   new Set(blogPosts.map((post) => post.categorySlug))
@@ -67,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
 
+    ...portfolioPages.map((path) => ({
+      url: `${site.url}${path}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+
     ...blogCategoryPages.map((path) => ({
       url: `${site.url}${path}`,
       changeFrequency: "weekly" as const,
@@ -81,4 +87,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
-
