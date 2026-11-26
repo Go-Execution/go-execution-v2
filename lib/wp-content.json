@@ -726,7 +726,7 @@
     "Digital Marketing": [
       {
         "name": "BASIC ORM PACKAGE",
-        "price": "$699 Month",
+        "price": "$999 Month",
         "striked": "$1399",
         "benefits": [
           "2 Phrases monitored & protected",
@@ -745,7 +745,7 @@
       },
       {
         "name": "VALUE ORM PACKAGE",
-        "price": "$999 Month",
+        "price": "$1499 Month",
         "striked": "$1,999",
         "benefits": [
           "3 Phrases protected & monitored",
@@ -786,7 +786,7 @@
     "Social Media Marketing": [
       {
         "name": "Essential Social Media Package — 2 Platforms",
-        "price": "$499",
+        "price": "$999",
         "benefits": [
           "Platforms: Facebook & Instagram",
           "Professional social media management",
@@ -806,7 +806,7 @@
       },
       {
         "name": "Advanced Social Media Package — 3 Platforms",
-        "price": "$999",
+        "price": "$1399",
         "benefits": [
           "Platforms: Facebook, Instagram & TikTok",
           "Advanced social media management",
@@ -830,7 +830,7 @@
       },
       {
         "name": "Enterprise Global Social Media Package — 5+ Platforms",
-        "price": "$1249",
+        "price": "$2499",
         "benefits": [
           "Platforms: Facebook, Instagram, TikTok, LinkedIn, YouTube Shorts, Pinterest & Additional Platforms",
           "Complete multi-platform social media management",
